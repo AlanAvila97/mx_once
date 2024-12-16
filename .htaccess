@@ -1,0 +1,39 @@
+# Turn Rewrite Engine On
+RewriteEngine on
+
+# Rewrite mapa de sitio
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^sitemap\.xml$ /REST/sitemap.php [L]
+
+# Rewrite quitar slash al final
+RewriteRule ^(aprender-a-envejecer|dialogosenconfianza|itinerario|aprenderaenvejecer|_programacion_|sistemas)($|/) - [L]
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [L,R=301]
+
+# Rewrite bloqueo git
+RewriteRule ^.*\.git.* - [R=404]
+
+# Rewrite carpeta de documentos
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^docs/(.*)$ /REST/data/$1 [L]
+
+# Rewrite carpeta de documentos finanzas
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^buzon/defensor/contabilidad/(.*)$ /REST/data/defensoria/contabilidad/$1 [L]
+
+# Rewrite del sitio en general excluyendo sitios wordpress
+RewriteRule ^(aprender-a-envejecer|dialogosenconfianza|itinerario|aprenderaenvejecer|_programacion_|sistemas)($|/) - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^/]+)(/([^/]+))? index.php?module=$1&slug=$3 [L,QSA]
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php74” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php74___lsphp .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit
+
+DirectoryIndex index.html

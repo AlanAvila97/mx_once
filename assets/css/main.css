@@ -1,0 +1,88 @@
+@import './navbar.css';
+
+/*-------------------------------------------------------------
+# css Clases Global
+--------------------------------------------------------------*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;    
+}
+:root{
+    /*-------------------------------------------------------------
+    # Colores Generales
+    --------------------------------------------------------------*/ 
+    --color_ebony_950: #04081c;
+    --color_barossa_950: #3e122d;
+    --color_jazzberry_jam_900: #9b0051;
+    --color_black_rock_950: #11012d;
+}
+body{
+    background-image: url();
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background: var(--color_ebony_950);
+    height: 100vh;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+}
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: var(--color_ebony_950);
+    background-size: 100% 100%;
+}
+.d-none{
+    display: none!important;
+}
+.d-flex{
+    display: flex!important;
+}
+.d-grid{
+    display: grid!important;
+}
+.body-overflow-hidden{
+    overflow: hidden;
+}
+.pt-md-60{
+    padding-top: 60px;
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.height-nav-mobile{
+    height: auto;
+    min-height: auto;
+}
+.c-pointer{
+    cursor: pointer;
+}
+/*--------------------------------------------------------------
+# Scroll container
+--------------------------------------------------------------*/
+.scroll-menu{
+    overflow-y: scroll;
+}
+.scroll-menu::-webkit-scrollbar{
+    width: 14px;
+}
+.scroll-menu::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 5px;
+    height: 45px;
+}

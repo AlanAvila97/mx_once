@@ -17,6 +17,20 @@
     <meta name="twitter:site" content="">
     <!-- Elements Header -->
 	<?php require_once("./Library/Layout/components/header_elements.php");?>
-<body class="">
-
+<body class="infomedia">
+    <!-- Preloader -->
+	<?php require_once("./Library/Layout/components/preloader.php");?>
+    <!-- End Preloader -->
+    <!-- Navbar -->
+	<?php require_once("./Library/Layout/components/nabvar.php");?>
+    <!-- End Navbar -->
+    <!-- View -->
+	<?php require_once("./Library/Layout/views/infomedia_view.php");?>
+    <!-- End View -->
+    <!-- Footer  -->
+	<?php require_once("./Library/Layout/components/footer.php");?>
+    <!-- End Footer  -->     
+    <!--  Footer Elements  -->
+    <?php require_once("./Library/Layout/components/footer_elements.php");?>
+    <!-- End Footer Elements-->
 </body>

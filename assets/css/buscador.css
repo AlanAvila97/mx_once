@@ -1,0 +1,84 @@
+.section-biblioteca{}
+.section-biblioteca .container-biblioteca{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+.section-biblioteca .container-biblioteca .title-biblioteca{
+    width: 50%;
+    text-align: center;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.section-biblioteca .container-biblioteca .title-biblioteca h2{
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.section-biblioteca .container-biblioteca .title-biblioteca p{
+    color: #fff;
+    font-size: 2rem;
+}
+.section-biblioteca .container-biblioteca .input-search{
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+}
+.section-biblioteca .container-biblioteca .input-search .search {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    padding: 1rem 0rem;
+}
+.section-biblioteca .container-biblioteca .input-search .search_pgm {
+    background-color: #f6dee7;
+    border: none;
+    color: #483210;
+    padding: 1.6rem 1.5rem 1.6rem 2.5rem;
+    border-radius: 3rem;
+    width: 50%;
+    transition: all ease-in-out .5s;
+    margin-right: -2rem;
+    font-size: 1.3rem;
+}
+.section-biblioteca .container-biblioteca .input-search .search_pgm:hover, 
+.section-biblioteca .container-biblioteca .input-search .search_pgm:focus {
+    box-shadow: 0 0 1em #00000013;
+}
+.section-biblioteca .container-biblioteca .input-search .search_pgm:focus {
+    outline: none;
+    background-color: #f6dee7;
+}
+.section-biblioteca .container-biblioteca .input-search .search_pgm::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #48321089;
+}
+.section-biblioteca .container-biblioteca .input-search .search_pgm:focus + .search__button {
+    background-color: #f6dee7;
+}
+.section-biblioteca .container-biblioteca .input-search .search__button {
+    border: none;
+    background-color: #f6dee7;
+    margin-top: .1em;
+}
+.section-biblioteca .container-biblioteca .input-search .search__button:hover {
+    cursor: pointer;
+}
+.section-biblioteca .container-biblioteca .input-search .search__icon {
+    color: #483210;
+    font-size: 1.3rem;
+}
+.section-biblioteca .container-biblioteca .input-search p{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0rem;
+}

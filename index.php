@@ -43,27 +43,6 @@
 				require_once($sitePath.$notFoundErrorPage);
 			}
 		}
-		// // 
-		// if($module == "matrix"){
-		// 	require_once($cmsPath."base.php");
-		// }else{
-		// 	if(file_exists($sitePath.$module.".php")){
-		// 		require_once($sitePath.$module.".php");
-		// 	}else{
-				
-		// 		foreach($obj as $pgr){
-		// 			if($pgr->slug == $module){
-		// 				$statusUrl = true;
-		// 			}
-		// 		}
-		// 		if($statusUrl){
-		// 			require_once($sitePath."wp.php");
-		// 		}else{
-		// 			header( "HTTP/1.1 404 Not Found" );
-		// 			require_once($sitePath.$notFoundErrorPage);
-		// 		}
-		// 	}
-		// }
 	}else{
 		require_once($sitePath."home.php");
 	}

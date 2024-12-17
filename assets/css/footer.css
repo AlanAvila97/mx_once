@@ -1,0 +1,93 @@
+/*-------------------------------------------------------------
+# Seccion Footer
+-------------------------------------------------------------*/
+.footer .container-footer{
+    padding: 2rem 0rem 3rem;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.footer .container-footer .logo,
+.footer .container-footer .about,
+.footer .container-footer .social-networks,
+.footer .container-footer .sinopsis-footer{
+    width: 100%;
+    height: auto;
+}
+.footer .container-footer .logo {
+    display: flex;
+    justify-content: center;
+}
+.footer .container-footer .logo img{
+    width: auto;
+    height: auto;
+    max-height: 50px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.footer .container-footer .about{
+    justify-content: center;
+    gap: 1rem;
+}
+.footer .container-footer .about a{
+    text-decoration: none;
+    padding: 1rem;
+}
+.footer .container-footer .about a h3{
+    color: #fff;
+    font-size: 1.3rem;
+}
+.footer .container-footer .social-networks {
+    justify-content: center;
+    gap: 1rem;
+}
+.footer .container-footer .social-networks a{
+    text-decoration: none;
+    padding: 1rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+.footer .container-footer .social-networks a i,
+.footer .container-footer .social-networks a h3{
+    color: #fff;
+    font-size: 1.3rem;
+}
+.footer .container-footer .sinopsis-footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+.footer .container-footer .sinopsis-footer h3,
+.footer .container-footer .sinopsis-footer p{
+    color: #fff;
+}
+.footer .container-footer .sinopsis-footer h3{
+    font-size: 1.3rem;
+}
+.footer .container-footer .sinopsis-footer p{
+    font-size: 1.2rem;
+    text-align: center;
+}
+@media (max-width: 660px){
+    /*-------------------------------------------------------------
+    # Seccion Footer
+    -------------------------------------------------------------*/
+    .footer .container-footer .logo,
+    .footer .container-footer .about,
+    .footer .container-footer .social-networks,
+    .footer .container-footer .sinopsis-footer{
+        flex-wrap: wrap;
+        gap: 0.5rem;
+
+    }
+}
+@media (max-width: 480px){
+    /*-------------------------------------------------------------
+    # Seccion Footer
+    -------------------------------------------------------------*/
+    .footer .container-footer .sinopsis-footer{
+        padding: 1rem;
+    }
+}

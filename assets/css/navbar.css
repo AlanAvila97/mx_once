@@ -22,7 +22,7 @@
 }
 .header .container-header{
     display: grid;
-    grid-template-columns: 0px 195px 1fr;
+    grid-template-columns: 0px 170px 1fr;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -82,7 +82,6 @@
     min-height: 100%;
     padding-top: 67px;
     background: rgb(0 0 0 / 86%);
-    text-transform: uppercase;
     transform: translateX(-250%);
     transition: transform 250ms ease-in-out;
     -webkit-transition: transform 250ms ease-in-out;
@@ -99,24 +98,34 @@
     width: 100%;
     height: 100%;
     max-height: 90%;
+    padding-top: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 1rem;
 }
 .header .container-header .content-menu-hamburguer #sidebarMenu .container-menu .items{
     font-family: "dinnextltprobold";
     cursor: pointer;
     text-decoration: none;
-    text-transform: capitalize;
     color: #fafafa;
     font-size: 1.7em;
-    margin: 2%;
+    width: auto;
     transition: opacity 0.2s linear;
     -webkit-transition: opacity 0.2s linear;
     -moz-transition: opacity 0.2s linear;
     -ms-transition: opacity 0.2s linear;
     -o-transition: opacity 0.2s linear;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+.header .container-header .content-menu-hamburguer #sidebarMenu .container-menu .items i{ 
+    font-size: 1rem;
+}
+.header .container-header .content-menu-hamburguer #sidebarMenu .container-menu .items-live i{ 
+    color: #f00;
 }
 .header .container-header .content-menu-hamburguer #sidebarMenu .container-menu .items.onceplus a{
     width: auto;
@@ -244,7 +253,7 @@
 
 .header .container-header .sections-nav .elements-nav li{
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1.1rem;
     width: auto;
     line-height: normal;
     text-transform: none;
@@ -275,6 +284,7 @@
 .header .container-header .sections-nav .elements-nav .more{
     cursor: pointer;
     border-right: none;
+    display: none;
 }
 .header .container-header .sections-nav .elements-nav .more button{
     background: transparent;
@@ -328,8 +338,9 @@
     justify-content: flex-start;
     align-items: center;
     align-items: flex-start;
-    width: 35%;
+    width: 40%;
     font-size: 1.2rem;
+    gap: 1rem;
 }
 .header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-site{
     display: flex;
@@ -378,7 +389,6 @@
     margin-bottom: 1%;
 }
 .header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down a{
-    margin-bottom: 1%;
     gap: 0.5rem;
 }
 .header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down a img{
@@ -399,10 +409,23 @@
     display: flex;
     justify-content: flex-start;
 }
+.header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down .site-live i{
+    font-size: 0.6rem;
+    color: rgb(255, 0, 0);
+}
+.header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down .sitios-once p{
+    font-size: 1.5rem;
+}
 .header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down .sitios-once picture{
     width: 25%;
     display: flex;
     justify-content: center;
+}
+.header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down .s_en-vivo,
+.header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down .s_r-en-vivo,
+.header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down .s_noticias,
+.header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down .s_mananera{
+    display: none;
 }
 .header .container-header .sections-nav .elements-nav li p,
 .header .container-header .sections-nav .elements-nav li p:hover,
@@ -471,4 +494,137 @@
     opacity: 1!important;
     height: 2px!important;
     width: 90%;
+}
+@media (max-width: 1100px){
+    /*-------------------------------------------------------------
+    # Header
+    --------------------------------------------------------------*/
+    .header .container-header{
+        grid-template-columns: 0px 170px 1fr;
+    }
+    .section-programation-live .container-programation-live .info-pgm {
+        max-width: 90%;
+    }
+    .header .container-header .sections-nav .elements-nav li a{
+        gap: 0.1rem;
+    }
+    .header .container-header .sections-nav .elements-nav .n-acordeones,
+    .header .container-header .sections-nav .elements-nav .n-infodemia,
+    .header .container-header .sections-nav .elements-nav .n-biblioteca{
+        display: none;
+    }
+    .header .container-header .sections-nav .elements-nav .more{
+        display: block;
+    }
+}
+@media (max-width: 991px){ 
+    /*-------------------------------------------------------------
+    # Header
+    --------------------------------------------------------------*/
+    .header .container-header{
+        grid-template-columns: 0px 170px 1fr;
+    }
+    .header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down{
+        width: 50%;
+    }
+    .header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down.list-navigation{
+        display: none;
+    }
+    .header .container-header .sections-nav .elements-nav li{
+        font-size: 1em;
+    }
+    .header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 800px){
+    /*-------------------------------------------------------------
+    # Header
+    --------------------------------------------------------------*/
+    .header{
+        background: #0d0c16!important;
+    }
+    .header .container-header .sections-nav .elements-nav .n-noticias,
+    .header .container-header .sections-nav .elements-nav .n-mananera{
+        display: none;
+    }
+    .header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down .s_noticias,
+    .header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down .s_mananera{
+        display: flex;
+    }
+    .header .container-header .sections-nav .elements-nav .more .list-more{
+        height: auto;
+    }
+    .header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 600px){
+    /*-------------------------------------------------------------
+    # Header
+    --------------------------------------------------------------*/
+    .header .container-header{
+        grid-template-columns: 50px 170px 1fr;
+    }
+    /* .header .container-header .sections-nav .elements-nav{} */
+    .header .container-header .sections-nav .elements-nav .live{
+        border-right: 2px solid rgba(255, 255, 255, 0);
+    }
+    .header .container-header .sections-nav .elements-nav .more{
+        display: none;
+    }
+    .header .container-header .content-menu-hamburguer #sidebarMenu {
+        display: block;
+    }
+    .header .container-header .container-searcher .input-search{
+        display: none;
+    }
+    .header .container-header .container-searcher .button-search{
+        display: flex!important;
+        width: 49%;
+        padding: 8%;
+    }
+    .header .container-header .sections-nav .elements-nav .more .list-more .container-list-down .lists-down{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width: 480px){
+    /*-------------------------------------------------------------
+    # Header
+    --------------------------------------------------------------*/
+    .header {
+        height: 90px;
+    }
+    .header .container-header{
+        grid-template-columns: 60px 150px 1fr;
+        justify-content: space-between;
+    }
+    .header .container-header .logo{
+        justify-content: center;
+    }
+    .header .container-header .container-searcher .button-search{
+        width: 50%;
+        height: 45px;
+        align-items: center;
+    }
+    .header .container-header .sections-nav .elements-nav{
+        gap: 0rem;
+        flex-direction: column;
+        height: 100%;
+    }
+    .header .container-header .sections-nav .elements-nav li a h3{
+        word-break: break-all;
+        font-size: 1.2rem;
+    }
+    .header .container-header .content-menu-hamburguer #sidebarMenu{
+        padding-top: 80px;
+    }
+}
+@media (max-width: 380px){
+    /*-------------------------------------------------------------
+    # Header
+    --------------------------------------------------------------*/
+    .header .container-header{
+        grid-template-columns: 50px 140px 1fr;
+    }
 }

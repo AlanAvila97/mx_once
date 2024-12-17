@@ -1,4 +1,6 @@
 @import './navbar.css';
+@import './footer.css';
+@import './index.css';
 
 /*-------------------------------------------------------------
 # css Clases Global
@@ -43,7 +45,7 @@ body::after {
     display: none!important;
 }
 .d-flex{
-    display: flex!important;
+    display: flex;
 }
 .d-grid{
     display: grid!important;
@@ -72,6 +74,9 @@ body::after {
 .c-pointer{
     cursor: pointer;
 }
+.pt-md-70{
+    padding-top: 70px;
+}
 /*--------------------------------------------------------------
 # Scroll container
 --------------------------------------------------------------*/
@@ -85,4 +90,77 @@ body::after {
     background: #ccc;
     border-radius: 5px;
     height: 45px;
+}
+/*--------------------------------------------------------------
+# Arrow Sliders
+--------------------------------------------------------------*/
+.arrow-preview,
+.arrow-next{
+    content: '';
+    cursor: pointer;
+    color: #fff;
+    background: #16161673;
+    width: 40px;
+    height: 80%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40%;
+    padding: 1rem;
+}
+.arrow-preview,
+.arrow-next{
+    height: auto;
+}   
+.arrow-preview i,
+.arrow-next i{
+    font-size: 1em;
+}
+.swiper:hover .arrow-preview,
+.swiper:hover .arrow-next{
+    transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -ms-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+}
+.arrow-preview{
+    left: 0;
+    transform: translate(-100%, -50%);
+    -webkit-transform: translate(-100%, -50%);
+    -moz-transform: translate(-100%, -50%);
+    -ms-transform: translate(-100%, -50%);
+    -o-transform: translate(-100%, -50%);
+    transition: transform 0.2s ease-out;
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -ms-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+}
+.arrow-next{
+    right: 0;
+    transform: translate(100%, -50%);
+    -webkit-transform: translate(100%, -50%);
+    -moz-transform: translate(100%, -50%);
+    -ms-transform: translate(100%, -50%);
+    -o-transform: translate(100%, -50%);
+    transition: transform 0.2s ease-out;
+    -webkit-transition: transform 0.2s ease-out;
+    -moz-transition: transform 0.2s ease-out;
+    -ms-transition: transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
+}
+.content-navigation-next,
+.content-navigation-prev{
+    width: 5%;
+    justify-content: center;
+}
+.content-navigation-next img,
+.content-navigation-prev img{
+    width: auto;
+    height: auto;
+    max-height: 40px;
+    max-width: 40px;
+    object-fit: cover;
 }

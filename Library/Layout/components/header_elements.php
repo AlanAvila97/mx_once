@@ -23,6 +23,27 @@
 <link rel="stylesheet" href="./assets/css/main.css" media="none" onload="if(media!='all')media='all'"/>
 <noscript><link rel="stylesheet" href="./assets/css/main.css"></noscript>
 
-
 <link rel="preload" href="./assets/css/fontawesome-free/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="./assets/css/fontawesome-free/css/all.min.css"></noscript>
+<style>
+    .preloader{ 
+        display:flex; 
+        justify-content:center; 
+        align-items:center; 
+        height:100vh; 
+        width:100%; 
+        background: linear-gradient(0deg, #04081c, #04081c 100%);
+        background-size: 100% 100%;
+        position:fixed; 
+        top:0; 
+        left:0; 
+        z-index:9999; 
+        transition:opacity 1.5s linear;                    
+    }
+    .preloader figure{
+        margin: 0;
+    }
+    .preloader img{
+        width:250px
+    }
+</style>

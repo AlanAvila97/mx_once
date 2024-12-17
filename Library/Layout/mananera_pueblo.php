@@ -17,6 +17,6 @@
     <meta name="twitter:site" content="">
     <!-- Elements Header -->
 	<?php require_once("./Library/Layout/components/header_elements.php");?>
-<body class="">
-
+<body class="mananera">
+    <?php require_once("./Library/Layout/components/nabvar.php");?>
 </body>

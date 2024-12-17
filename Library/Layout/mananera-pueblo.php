@@ -2,7 +2,7 @@
 <html lang="es-MX">
 <head>
     <meta charset="UTF-8">
-    <title>Acordeones || <?php echo $titleName; ?></title>
+    <title>Mañanera Pueblo || <?php echo $titleName; ?></title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
@@ -17,7 +17,7 @@
     <meta name="twitter:site" content="">
     <!-- Elements Header -->
 	<?php require_once("./Library/Layout/components/header_elements.php");?>
-<body class="acordeones">
+<body class="mananera">
     <!-- Preloader -->
 	<?php require_once("./Library/Layout/components/preloader.php");?>
     <!-- End Preloader -->
@@ -25,7 +25,7 @@
 	<?php require_once("./Library/Layout/components/nabvar.php");?>
     <!-- End Navbar -->
     <!-- View -->
-	<?php require_once("./Library/Layout/views/acordeones_view.php");?>
+	<?php require_once("./Library/Layout/views/mananera_pueblo_view.php");?>
     <!-- End View -->
     <!-- Footer  -->
 	<?php require_once("./Library/Layout/components/footer.php");?>

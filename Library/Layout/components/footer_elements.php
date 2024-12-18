@@ -2,4 +2,3 @@
 <script defer src="./assets/js/swiper/swiper-bundle.min.js"></script>
 <script defer src="./assets/js/main.js"></script>
 <script defer src="./assets/js/main-sliders.js"></script>
-<script defer src="./assets/js/index.js"></script>

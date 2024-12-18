@@ -1,5 +1,5 @@
-const ImagenesCarruseles = fetchData('https://canaloncetv.s3.amazonaws.com/REST/data/mdb/icarouseles.json');
-const ImagesBannerRotativo = fetchData('https://canaloncetv.s3.amazonaws.com/REST/data/mdb/brotativo.json');
+const ImagenesCarruseles = fetchData('https://canaloncetv.s3.amazonaws.com/REST/data/mdb/icarouseles.json?cache='+Date.now());
+const ImagesBannerRotativo = fetchData('https://canaloncetv.s3.amazonaws.com/REST/data/mdb/brotativo.json?cache='+Date.now());
 /**
   * @description Función que parsea una cadena a minusculas, elimina caracteres especiales, espacios, acentos
   * @param cadena Contiene la cadena con caracteres especiales, mayusculas, espacios, acentos

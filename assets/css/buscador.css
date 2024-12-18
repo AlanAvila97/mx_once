@@ -1,6 +1,10 @@
-.section-biblioteca{}
+@import './preload_search.css';
+/*-------------------------------------------------------------
+# Seccion Principal del Buscador
+--------------------------------------------------------------*/
 .section-biblioteca .container-biblioteca{
-    height: 100%;
+    background-color: var(--color_barossa_950);
+    height: auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -30,55 +34,207 @@
     height: auto;
     flex-direction: column;
     align-items: center;
-}
-.section-biblioteca .container-biblioteca .input-search .search {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    justify-content: center;
     padding: 1rem 0rem;
 }
-.section-biblioteca .container-biblioteca .input-search .search_pgm {
-    background-color: #f6dee7;
-    border: none;
-    color: #483210;
-    padding: 1.6rem 1.5rem 1.6rem 2.5rem;
+.section-biblioteca .container-biblioteca .input-search .search{
+    cursor: pointer;
     border-radius: 3rem;
-    width: 50%;
-    transition: all ease-in-out .5s;
-    margin-right: -2rem;
+    background: #f6dee7;
     font-size: 1.3rem;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    transition: all ease-in-out .5s;
+    width: 50%;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    align-items: center;
+    gap: 0.4rem;
 }
-.section-biblioteca .container-biblioteca .input-search .search_pgm:hover, 
-.section-biblioteca .container-biblioteca .input-search .search_pgm:focus {
-    box-shadow: 0 0 1em #00000013;
+.section-biblioteca .container-biblioteca .input-search .search::-webkit-search-cancel-button {
+    cursor: pointer;
 }
-.section-biblioteca .container-biblioteca .input-search .search_pgm:focus {
-    outline: none;
-    background-color: #f6dee7;
+.section-biblioteca .container-biblioteca .input-search .search:hover, 
+.section-biblioteca .container-biblioteca .input-search .search:focus {
+    box-shadow: 0 0 1rem #f2f2f2b3;
 }
-.section-biblioteca .container-biblioteca .input-search .search_pgm::-webkit-input-placeholder {
+.section-biblioteca .container-biblioteca .input-search .search i{
+    color: #483210;
+}
+.section-biblioteca .container-biblioteca .input-search .search .search_in {
+    color: #483210;
+    background: #f6dee7;
+    border: 0.5px solid #f6dee7;
+    border: none;
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem 1.5rem 0rem;
+    width: 100%;
+}
+.section-biblioteca .container-biblioteca .input-search .search .search_in:-webkit-autofill {
+    -webkit-text-fill-color: #000; 
+    box-shadow: 0 0 0 50px #f6dee7 inset; 
+}
+.section-biblioteca .container-biblioteca .input-search .search .search_in::-webkit-search-cancel-button {
+    cursor: pointer;
+}
+.section-biblioteca .container-biblioteca .input-search .search .search_in::-webkit-input-placeholder {
     font-weight: 100;
     color: #48321089;
 }
-.section-biblioteca .container-biblioteca .input-search .search_pgm:focus + .search__button {
-    background-color: #f6dee7;
-}
-.section-biblioteca .container-biblioteca .input-search .search__button {
+.section-biblioteca .container-biblioteca .input-search .search .search_in:focus-visible {
+    border: 0.5px solid #b4b4b4;
     border: none;
-    background-color: #f6dee7;
-    margin-top: .1em;
+    outline: none;
 }
-.section-biblioteca .container-biblioteca .input-search .search__button:hover {
+.section-biblioteca .container-biblioteca .input-search .search .search_in:focus + .search__button {
+    box-shadow: 0 0 1rem #00000075;
+}
+.section-biblioteca .container-biblioteca .input-search .search .search__button {
+    color: #fff;
+    background: #ff1621;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    height: auto;
+    padding: 1.2rem;
+    width: 7rem;
+}
+.section-biblioteca .container-biblioteca .input-search .search .search__button:hover {
     cursor: pointer;
 }
-.section-biblioteca .container-biblioteca .input-search .search__icon {
-    color: #483210;
-    font-size: 1.3rem;
+.section-biblioteca .container-biblioteca .input-search .button-search{
+    background: rgb(255, 255, 255);
+    padding: 4%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 20%;
+    cursor: pointer;
 }
 .section-biblioteca .container-biblioteca .input-search p{
     color: #fff;
     font-size: 2rem;
     padding: 1rem 0rem;
+}
+/*-------------------------------------------------------------
+# Seccion Resultados del Buscador
+--------------------------------------------------------------*/
+.section-biblioteca .content-results-search{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+}
+.section-biblioteca .content-results-search .title-results{
+    width: 100%;
+    height: auto;
+}
+.section-biblioteca .content-results-search .title-results h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #fff;
+}
+.section-biblioteca .content-results-search .results{
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.section-biblioteca .content-results-search .results .item-result{
+    background-color: #fffcf8;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-width: 331px;
+    text-decoration: none;
+    box-shadow: 0px 0px 15px 2px #ffffff75;
+}
+.section-biblioteca .content-results-search .results .item-result .img-pgm{
+    width: 100%;
+    height: auto;
+}
+.section-biblioteca .content-results-search .results .item-result .img-pgm picture{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.section-biblioteca .content-results-search .results .item-result .img-pgm picture img{
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    -webkit-border-radius: 0.5rem 0.5rem 0rem 0rem;
+    -moz-border-radius: 0.5rem 0.5rem 0rem 0rem;
+    -ms-border-radius: 0.5rem 0.5rem 0rem 0rem;
+    -o-border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.section-biblioteca .content-results-search .results .item-result .info-pgm{
+    width: 100%;
+    height: 100%;
+    padding: 0.3rem 0.5rem 1rem;
+}
+.section-biblioteca .content-results-search .results .item-result .info-pgm h2{
+    font-size: 1.5rem;
+    margin-bottom: 9px;
+    margin-top: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #000;
+}
+.section-biblioteca .content-results-search .results .item-result .info-pgm p{
+    color: #000;
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+@media (max-width: 991px) {
+    /*-------------------------------------------------------------
+    # Seccion Principal del Buscador
+    --------------------------------------------------------------*/
+    .section-biblioteca .container-biblioteca{
+        padding: 1rem 1.2rem;
+    }
+    .section-biblioteca .container-biblioteca .title-biblioteca{
+        width: 100%;
+    }
+    .section-biblioteca .container-biblioteca .input-search .search{
+        width: 80%;
+    }
+    /*-------------------------------------------------------------
+    # Seccion Resultados del Buscador
+    --------------------------------------------------------------*/
+    .section-biblioteca .content-results-search .results{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+}
+@media (max-width: 650px) {
+    /*-------------------------------------------------------------
+    # Seccion Principal del Buscador
+    --------------------------------------------------------------*/
+    .section-biblioteca .container-biblioteca .title-biblioteca h2{
+        font-size: 3rem;
+    }
+    .section-biblioteca .container-biblioteca .title-biblioteca p,
+    .section-biblioteca .container-biblioteca .input-search p{
+        font-size: 1.5rem;
+    }
+    .section-biblioteca .container-biblioteca .input-search .search{
+        width: 100%;
+    }
 }

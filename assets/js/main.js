@@ -6,7 +6,7 @@ const RESTURLDataNormal = "https://canalonce.mx/REST/data/normal/";
 */
 async function fetchData(url) {
   try {
-      const res = await fetch(url+'?cache='+Date.now())
+      const res = await fetch(url)
       const data = await res.json()
       return data;
   } catch (error) {
@@ -54,16 +54,16 @@ const sizeWindowMenus = () => {
 */
 window.onscroll = function() { scrollFunction(); };
 const scrollFunction = () => {
-  let mobile = (/iphone|webOS|Windows Phone|iPod|Android|ipad/i.test(navigator.userAgent.toLowerCase()));
-  if(mobile) {
-      $('.header').attr('style', 'background: #0d0c16;');
-  }else{
-      if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
-          $('.header').attr('style', 'background: #0d0c16;');
-      } else {
-          $('.header').attr('style', 'background: #00000066;');
-      }
-  }
+  // let mobile = (/iphone|webOS|Windows Phone|iPod|Android|ipad/i.test(navigator.userAgent.toLowerCase()));
+  // if(mobile) {
+  //     $('.header').attr('style', 'background: #0d0c16;');
+  // }else{
+  //     if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+  //         $('.header').attr('style', 'background: #0d0c16;');
+  //     } else {
+  //         $('.header').attr('style', 'background: #0d0c16;');
+  //     }
+  // }
 }
 /**
   * @description Funcion que contiene las funciones generales de la página

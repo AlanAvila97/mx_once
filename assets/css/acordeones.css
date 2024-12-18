@@ -1,0 +1,36 @@
+.section-acordeones {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos en el eje horizontal */
+    padding: 50px;
+}
+
+.section-acordeones h1 {
+    align-self: flex-start; /* Alinea el h1 a la izquierda */
+    margin: 0 0 120px 176px;
+    color: #ffffff;
+}
+
+.container-acordeones {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 20px; /* Espacio entre las imágenes */
+}
+
+.section-acordeones .container-acordeones .image-item {
+    width: 300px;
+    text-align: center; /* Centra el texto debajo de la imagen */
+}
+
+.section-acordeones .container-acordeones .image-item img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    border-radius: 20px;
+}
+
+.section-acordeones .container-acordeones .image-item h3 {
+    margin: 10px 0 0; 
+    font-size: 16px; 
+    color: #ffffff
+}

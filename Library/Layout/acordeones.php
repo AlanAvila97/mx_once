@@ -33,4 +33,7 @@
     <!--  Footer Elements  -->
     <?php require_once("./Library/Layout/components/footer_elements.php");?>
     <!-- End Footer Elements-->
+     <!-- CSS Acordeones -->
+     <link rel="stylesheet" href="./assets/css/acordeones.css" media="none" onload="if(media!='all')media='all'"/>
+     <!-- End Css Acordeones -->
 </body>

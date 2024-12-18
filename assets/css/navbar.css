@@ -443,49 +443,6 @@
     display: flex;
     justify-content: flex-end;
 }
-.header .container-header .container-searcher .input-search{
-    border-radius: 10px;
-    background: #fff;
-    padding: 2%;
-    margin-right: 5%;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-}
-.header .container-header .container-searcher .input-search i{
-    color: #b4b4b4;
-}
-.header .container-header .container-searcher .input-search .search {
-    border: 0.5px solid #b4b4b4;
-    border: none;
-    font-size: 1em;
-    padding-left: 6px;
-    width: 100%;
-}
-.header .container-header .container-searcher .input-search .search:focus-visible {
-    border: 0.5px solid #b4b4b4;
-    border: none;
-    outline: none;
-}
-.header .container-header .container-searcher .button-search{
-    background: rgb(255, 255, 255);
-    padding: 4%;
-    margin-right: 5%;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    width: 20%;
-    cursor: pointer;
-}
 .header hr{
     background: #cdcdcd;
     border: 1px solid #cdcdcd;

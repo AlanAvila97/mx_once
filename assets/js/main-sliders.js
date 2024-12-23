@@ -142,4 +142,7 @@ $(document).ready(function() {
         sliderVerticalPrograms('swiper-information-special-programs', 'section-information-special-programs');
         sliderHorizontalPrograms('swiper-series-special-programs', 'section-series-special-programs');
     }
+    if($('.infomedia').length){  
+        sliderHorizontalPrograms('swiper-desmentidos-pgm', 'section-desmentidos-pgm');
+    }
 });

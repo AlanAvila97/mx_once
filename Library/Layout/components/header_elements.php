@@ -30,8 +30,8 @@
         display:flex; 
         justify-content:center; 
         align-items:center; 
-        height:100vh; 
-        width:100%; 
+        height: 100vh; 
+        width: 100%; 
         background: linear-gradient(0deg, #04081c, #04081c 100%);
         background-size: 100% 100%;
         position:fixed; 

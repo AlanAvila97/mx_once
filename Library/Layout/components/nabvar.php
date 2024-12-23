@@ -35,7 +35,7 @@
             </div>
         </div>
         <div class="logo">
-            <a href="/" aria-label="Redirección a página principal">                    
+            <a href="./" aria-label="Redirección a página principal">                    
                 <picture>
                     <source class="lazy img-fluid" srcset="https://canalonce.mx/REST/data/images/logomxplus.png" type="image/webp">
                     <source class="lazy img-fluid" srcset="https://canalonce.mx/REST/data/images/logomxplus.png" type="image/png"> 

@@ -1,6 +1,5 @@
 @import './navbar.css';
 @import './footer.css';
-@import './index.css';
 /*-------------------------------------------------------------
 # css Clases Global
 --------------------------------------------------------------*/
@@ -14,10 +13,25 @@
     /*-------------------------------------------------------------
     # Colores Generales
     --------------------------------------------------------------*/ 
-    --color_ebony_950: #04081c;
     --color_barossa_950: #3e122d;
-    --color_jazzberry_jam_900: #9b0051;
+    --color_black_950: #000000;
     --color_black_rock_950: #11012d;
+    --color_bridal_heath_50: #fffcf8;
+    --color_cinder_950: #0d0c16;
+    --color_concrete_100: #f2f2f2b3;
+    --color_deep_bronze_950: #483210;
+    --color_ebony_950: #04081c;
+    --color_iron_300: #ccc;
+    --color_jazzberry_jam_900: #9b0051;
+    --color_pale_slate_300: #cecbcb;
+    --color_red_orange_900: #ff1621;
+    --color_sazerac_50: #fff3de;
+    --color_silver_400: #bfbfbf;
+    --color_silver_chalice_400: #b4b4b4;
+    --color_steel_gray_950: #26213a;
+    --color_twine_4000: #be995f;
+    --color_we_peep_200: #f6dee7;
+    --color_white_50: #fff;
 }
 body{
     background-image: url();
@@ -52,9 +66,6 @@ body::after {
 .body-overflow-hidden{
     overflow: hidden;
 }
-.pt-md-60{
-    padding-top: 60px;
-}
 .fixed-top {
     position: fixed;
     top: 0;
@@ -73,8 +84,14 @@ body::after {
 .c-pointer{
     cursor: pointer;
 }
+.pt-md-60{
+    padding-top: 60px;
+}
 .pt-md-70{
     padding-top: 70px;
+}
+.pt-md-100{
+    padding-top: 100px;
 }
 /*--------------------------------------------------------------
 # Scroll container
@@ -86,7 +103,7 @@ body::after {
     width: 14px;
 }
 .scroll-menu::-webkit-scrollbar-thumb{
-    background: #ccc;
+    background: var(--color_iron_300);
     border-radius: 5px;
     height: 45px;
 }
@@ -97,7 +114,7 @@ body::after {
 .arrow-next{
     content: '';
     cursor: pointer;
-    color: #fff;
+    color: var(--text_color_sazerac_50);
     background: #16161673;
     width: 40px;
     height: 80%;
@@ -162,4 +179,9 @@ body::after {
     max-height: 40px;
     max-width: 40px;
     object-fit: cover;
+}
+@media (max-width: 480px) {
+    .pt-md-70{
+        padding-top: 85px;
+    }
 }

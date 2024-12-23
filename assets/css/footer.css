@@ -36,7 +36,7 @@
     padding: 1rem;
 }
 .footer .container-footer .about a h3{
-    color: #fff;
+    color: var(--color_sazerac_50);
     font-size: 1.3rem;
 }
 .footer .container-footer .social-networks {
@@ -51,7 +51,7 @@
 }
 .footer .container-footer .social-networks a i,
 .footer .container-footer .social-networks a h3{
-    color: #fff;
+    color: var(--color_sazerac_50);
     font-size: 1.3rem;
 }
 .footer .container-footer .sinopsis-footer{
@@ -61,7 +61,7 @@
 }
 .footer .container-footer .sinopsis-footer h3,
 .footer .container-footer .sinopsis-footer p{
-    color: #fff;
+    color: var(--color_sazerac_50);
 }
 .footer .container-footer .sinopsis-footer h3{
     font-size: 1.3rem;
@@ -80,7 +80,6 @@
     .footer .container-footer .sinopsis-footer{
         flex-wrap: wrap;
         gap: 0.5rem;
-
     }
 }
 @media (max-width: 480px){

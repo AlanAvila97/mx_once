@@ -1,6 +1,7 @@
 const RESTURLData = "https://canalonce.mx/REST/data/";
 const RESTURLDataIMAGES = "https://canalonce.mx/REST/data/images/";
 const RESTURLDataNormal = "https://canalonce.mx/REST/data/normal/";
+const RESTURLMINUATURAS = "https://canalonce.mx/REST/data/miniaturas/"
 /**
  * @description Funcion que obtiene el json que contiene la informacion de los sliders del Home
 */
@@ -26,6 +27,12 @@ const getQueryElement = (element) => {
     return document.querySelector(element);
 }  
 /**
+ * @description Función agrega una clase varios elementos html
+*/   
+const getAllElement = (element) => {
+  return document.querySelectorAll(element);
+}
+/**
   * @description Funcion que añade texto a un elemento html
 */
 const appendHtmlSlider = ( element , text) => {
@@ -48,22 +55,6 @@ const sizeWindowMenus = () => {
   setTimeout(function () {
       sizeWindowMenus();
   }, 500);
-}
-/**
-* @description Funcion que da opacidad o da backgound solido al navbar dependiendo de la posición del top de la vista
-*/
-window.onscroll = function() { scrollFunction(); };
-const scrollFunction = () => {
-  // let mobile = (/iphone|webOS|Windows Phone|iPod|Android|ipad/i.test(navigator.userAgent.toLowerCase()));
-  // if(mobile) {
-  //     $('.header').attr('style', 'background: #0d0c16;');
-  // }else{
-  //     if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
-  //         $('.header').attr('style', 'background: #0d0c16;');
-  //     } else {
-  //         $('.header').attr('style', 'background: #0d0c16;');
-  //     }
-  // }
 }
 /**
   * @description Funcion que contiene las funciones generales de la página

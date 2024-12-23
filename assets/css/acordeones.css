@@ -1,36 +1,68 @@
 .section-acordeones {
+    background-color: var(--color_barossa_950);
+}
+.section-acordeones .container-acordeones{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra los elementos en el eje horizontal */
-    padding: 50px;
+    padding: 1rem 4rem;
+    gap: 1rem;
+    align-items: center;
 }
-
-.section-acordeones h1 {
-    align-self: flex-start; /* Alinea el h1 a la izquierda */
-    margin: 0 0 120px 176px;
-    color: #ffffff;
+.section-acordeones .container-acordeones .content-acordeones,
+.section-acordeones .container-acordeones .title-acordeones{
+    width: 77%;
+    height: auto;
 }
-
-.container-acordeones {
-    display: grid;
-    grid-template-columns: repeat(3, 300px);
-    gap: 20px; /* Espacio entre las imágenes */
+.section-acordeones .container-acordeones .title-acordeones h1 {
+    color: var(--color_sazerac_50);
+    font-size: 2.8rem;
 }
-
-.section-acordeones .container-acordeones .image-item {
-    width: 300px;
-    text-align: center; /* Centra el texto debajo de la imagen */
+.section-acordeones .container-acordeones .content-acordeones {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    justify-items: center;
 }
-
-.section-acordeones .container-acordeones .image-item img {
+.section-acordeones .content-acordeones .image-item {
     width: 100%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor */
+    height: auto;
+    max-width: 100%;
+    text-align: center;
+}
+.section-acordeones .content-acordeones .image-item img {
+    width: 100%;
+    height: auto; 
+    max-width: 100%;
+    object-fit: cover; 
+    display: block;
     border-radius: 20px;
 }
-
-.section-acordeones .container-acordeones .image-item h3 {
+.section-acordeones .content-acordeones .image-item h3 {
     margin: 10px 0 0; 
-    font-size: 16px; 
-    color: #ffffff
+    font-size: 1rem; 
+    color: var(--color_sazerac_50)
+}
+@media (max-width: 991px) {
+    .section-acordeones .container-acordeones{
+        padding: 1rem 2rem;
+    }
+    .section-acordeones .container-acordeones .content-acordeones,
+    .section-acordeones .container-acordeones .title-acordeones{
+        width: 100%;
+        height: auto;
+    }    
+}
+@media (max-width: 650px) {
+    .section-acordeones .container-acordeones .title-acordeones h1{
+        font-size: 2.3rem;
+    }
+    .section-acordeones .container-acordeones .content-acordeones{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+@media (max-width: 480px) {
+    .section-acordeones .container-acordeones .title-acordeones h1{
+        font-size: 2rem;
+    }
 }

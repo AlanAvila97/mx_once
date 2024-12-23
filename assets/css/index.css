@@ -19,7 +19,7 @@
     padding: 2rem;
 }
 .section-header .container-header .sinopsis-mx .info h2{
-    color: #fff3de;
+    color: var(--color_sazerac_50);
     font-size: calc(1vh + 1.5rem);
 }
 .section-header .container-header .collage-logos-mx{
@@ -29,7 +29,7 @@
 # Seccion Slider Head
 --------------------------------------------------------------*/
 .section-slider-header{
-    background: linear-gradient(180deg, #3e122d 50%, #990050 50%);
+    background: linear-gradient(180deg, var(--color_barossa_950) 50%, var(--color_jazzberry_jam_900) 50%);
 }
 .section-slider-header .container-slider-header{
     height: 100%;
@@ -61,7 +61,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     text-decoration: none;
-    color: #fff;
+    color: var(--color_sazerac_50);
 }
 .section-slider-header .container-slider-header .slider-head .swiper-slide img {
     width: auto;
@@ -74,7 +74,7 @@
 .section-slider-header .container-slider-header .slider-head .swiper-pagination-bullet {
     width: 20px;
     height: 20px;
-    background: #fff;
+    background: var(--color_white_50);
 }
 .section-slider-header .container-slider-header .slider-head .slider-pagination{
     width: 100%;
@@ -96,7 +96,7 @@
     padding: 1rem 3rem;
 }
 .section-special-programs .container-special-programs .title-special-programs{
-    color: #fff;
+    color: var(--color_white_50);
 }
 .section-special-programs .container-special-programs .title-special-programs h2{
     text-transform: uppercase;
@@ -127,10 +127,10 @@
     justify-content: flex-start;
     align-items: center;
     text-decoration: none;
-    color: #fff;
+    color: var(--color_sazerac_50);
 }
 .section-special-programs .container-special-programs .slider-special-programs .swiper-slide  a:hover {
-    color: #fff;
+    color: var(--color_sazerac_50);
 }
 .section-special-programs .container-special-programs .slider-special-programs .swiper-slide  a picture{
     width: 100%;
@@ -162,10 +162,10 @@
     color: #000000;
     position: absolute;
     bottom: 10%;
-    background: #ffffffdb;
+    background: var(--color_sazerac_50);
     padding: 5px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px 1px #fff;
+    box-shadow: 0px 0px 5px 1px var(--color_white_50);
 }
 .section-special-programs .container-special-programs .slider-special-programs .swiper-slide .redirect-special{
     text-decoration: none;
@@ -178,13 +178,13 @@
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    background: #9c1254;
+    background: var(--color_jazzberry_jam_900);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .section-special-programs .container-special-programs .slider-special-programs .swiper-slide .redirect-special .content-redirect-special h2{
-    color: #fff;
+    color: var(--color_sazerac_50);
 }
 .section-special-programs .container-special-programs .slider-special-programs .container-button-premier-programs{
     display: flex;
@@ -202,9 +202,9 @@
     -o-transform: translate(0%,-6em);
 }
 .section-special-programs .container-special-programs .slider-special-programs .container-button-premier-programs a button{
-    color: #fff;
+    color: var(--color_sazerac_50);
     cursor: pointer;
-    background: #9c1254;
+    background: var(--color_jazzberry_jam_900);
     border: none;
     border-radius: 10px;
     font-size: 2rem;
@@ -213,9 +213,6 @@
 /*-------------------------------------------------------------
 # Seccion Canales
 --------------------------------------------------------------*/
-.section-channels{
-    
-}
 .section-channels .container-channels{
     height: 100%;
     width: 100%;
@@ -224,7 +221,7 @@
     padding: 2rem 0rem;
 }
 .section-channels .container-channels .title-channels{
-    color: #fff;
+    color: var(--color_sazerac_50);
     padding: 3rem 3rem;
     text-align: center;
 }
@@ -268,10 +265,10 @@
     display: flex;
     flex-direction: column;
     padding: 2rem 0rem;
-    background-color: #000000;
+    background-color: var(--color_black_rock_950);
 }
 .section-latitudes .container-latitudes .title-latitudes{
-    color: #fff;
+    color: var(--color_sazerac_50);
     padding: 3rem 3rem;
     text-align: center;
 }
@@ -283,7 +280,6 @@
     font-size: 1.1rem;
 }
 .section-latitudes .container-latitudes .logos-latitudes{
-    /* background: var(--color_black_rock_950); */
     width: 100%;
     height: auto;
     justify-content: space-around;

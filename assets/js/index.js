@@ -1,42 +1,6 @@
 const ImagenesCarruseles = fetchData('https://canaloncetv.s3.amazonaws.com/REST/data/mdb/icarouseles.json?cache='+Date.now());
 const ImagesBannerRotativo = fetchData('https://canaloncetv.s3.amazonaws.com/REST/data/mdb/brotativo.json?cache='+Date.now());
 /**
-  * @description Función que parsea una cadena a minusculas, elimina caracteres especiales, espacios, acentos
-  * @param cadena Contiene la cadena con caracteres especiales, mayusculas, espacios, acentos
-  * @return {textParser} Retorna la cadena parseada
-*/
-const parseoTexto = (cadena) => {
-	let txt = String(cadena);
-	let textParser = txt.replaceAll(' ', '-');
-		  textParser = textParser.toLowerCase();
-		  textParser = eliminarAcentos(textParser);
-	return eliminarCaracteres(textParser);
-}
-/**
-  * @description Función que parsea una cadena eliminando acentos
-  * @param cadena Contiene la cadena con caracteres acentos
-  * @return {res} Retorna la cadena parseada
-*/
-const eliminarAcentos = (cadena) => {
-	var chars={
-		"á":"a", "é":"e", "í":"i", "ó":"o", "ú":"u",
-		"à":"a", "è":"e", "ì":"i", "ò":"o", "ù":"u", "ñ":"n",
-		"Á":"A", "É":"E", "Í":"I", "Ó":"O", "Ú":"U",
-		"À":"A", "È":"E", "Ì":"I", "Ò":"O", "Ù":"U", "Ñ":"N"};
-	var expr=/[áàéèíìóòúùñ]/ig;
-	var res=cadena.replace(expr,function(e){return chars[e]});
-	return res;
-}
-/**
-  * @description Función que parsea una cadena a minusculas, elimina caracteres especiales, espacios, acentos
-  * @param cadena Contiene la cadena con caracteres especiales, mayusculas, espacios, acentos
-  * @return {textParser} Retorna la cadena parseada
-*/
-const eliminarCaracteres = (cadena) =>{
-	var outString = cadena.replace(/[`~!¡@#$%^&*()_|+\=¿?;:'",.<>\{\}\[\]\\\/]/gi, '');
-	return outString;
-}
-/**
   * @description 
   * @param data Información del registro del programa
   * @param type Tipo de imagen 1 Vertical 2 Horizontal
@@ -86,7 +50,7 @@ const seccionHeader = (data) => {
   * @param element Información 
 */
 const setSectionSlidersData = (data, element, type) => {
-    let html = '', image, imageWebp;
+    let html = '';
     data.forEach(ele => {
         let { urlImg, image, imageWebp } = filterImages(ele, type);
         html += '<div class="swiper-slide">'+

@@ -19,11 +19,22 @@
 			die();
 		}
 	}
-	if(isset($_GET['module'])){ $module = $_GET['module'];}
-	if(isset($_GET['module'])){ $slug = $_GET['slug']; }
-	
+	if(isset($_GET['module'])){ 
+		$module = $_GET['module'];
+	}
+	if(isset($_GET['module'])){ 
+		$slug = $_GET['slug'];
+	}
+
 
 	if(isset($module)){
+		
+		// if($slug == "eloncees"){
+
+		// 	header("Location: https://buzon.elonce.mx/");
+		// 	die();
+		// }
+
 		if(file_exists($sitePath.$module.".php")){
 			require_once($sitePath.$module.".php");
 		}else{

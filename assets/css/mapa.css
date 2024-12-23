@@ -8,9 +8,8 @@
     height: 100%;
     width: 100%;
     padding: 1rem 3rem;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    place-content: center;
+    grid-template-columns: 25% 1fr;
 }
 .section-radio .container-radio  .controls {
     background: cyan;
@@ -65,4 +64,10 @@
 }
 .section-radio .container-radio  path {
     stroke: rgba(255, 255, 255, 0.273);
+}
+@media (max-width: 991px) {
+    .section-radio .container-radio {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
 }

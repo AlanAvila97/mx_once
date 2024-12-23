@@ -41,5 +41,5 @@
     <!-- End Footer Elements-->
     <!--  -->
     <script src='https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.5.0/dist/svg-pan-zoom.min.js'></script>    
-    <script defer src="./assets/js/mapa.js"></script>
+    <script defer src="./assets/js/mapa-radio.js"></script>
 </body>

@@ -8634,8 +8634,6 @@
                     </g>
             </svg>
         </div>
-        <div id="zoom-in" class=""> aumentar</div>
-        <div id="zoom-out" class=""> reducir</div>
         <div class="controls">
             <button id="zoom-in">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16">

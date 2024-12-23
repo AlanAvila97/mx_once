@@ -1,3 +1,4 @@
+// const jsonEstados = fetchData(`https://canaloncetv.s3.amazonaws.com/REST/data/mdb/episodes/desktop/estados.json?cache=${Date.now()}`);
 // Setup
 var panZoom = svgPanZoom("#svg", {
   zoomEnabled: true,
@@ -192,31 +193,34 @@ var panZoom = svgPanZoom("#svg", {
     panZoom.center();
   });
   
+    const jsonEstados = fetchData(`https://canaloncetv.s3.amazonaws.com/REST/data/mdb/channels.json?cache=${Date.now()}`);
     // Get all elements with the 'hoverable' class
     const hoverableElements = document.querySelectorAll('.hoverable');
   
     hoverableElements.forEach(element => {
         // Fix color on click
-        element.addEventListener('click', () => {
-  
-          console.log('Hola');
+        element.addEventListener('click', (e) => clickMapa(e, element));
+    });
+    async function clickMapa(e, element) {
+      let data = await jsonEstados;
+      console.log(data);
+      // console.log('Hola');
           
-          //console.log(element.id);
-  
-          hoverableElements.forEach(elemento => {
-  
-            if(element.id === elemento.id){
-              const jsonEpisode = fetchData(`https://canaloncetv.s3.amazonaws.com/REST/data/mdb/episodes/desktop/${slugc}.json?cache=${Date.now()}`);
-              elemento.setAttribute('style', 'fill:white;fill-opacity:0.1;stroke-width:0.35408;stroke:white;'); // Change fill color on hover
-              
-            }
-            if(element.id != elemento.id){
-              elemento.setAttribute('style', 'fill:#000;fill-opacity:0.8;stroke-width:0.35408;stroke: rgba(255, 255, 255, 0.273);'); // Change fill color on hover
-            }
-            });
-    
-          });
-      });
+      // //console.log(element.id);
+      // hoverableElements.forEach(elemento => {
+        if(element.id === e.target.id){
+
+          element.setAttribute('style', 'fill:white;fill-opacity:0.1;stroke-width:0.35408;stroke:white;'); // Change fill color on hover
+          
+        }
+        if(element.id != e.target.id){
+          element.setAttribute('style', 'fill:#000;fill-opacity:0.8;stroke-width:0.35408;stroke: rgba(255, 255, 255, 0.273);'); // Change fill color on hover
+        }
+      //   });
+
+      // });
+    }
+
           /*
   //console.log(hoverableElements);
   let isColorChanged = false; // Track whether the color has been changed

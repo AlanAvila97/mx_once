@@ -1,0 +1,347 @@
+/*-------------------------------------------------------------
+# Seccion Principal Mañanera
+--------------------------------------------------------------*/
+.section-mananera{
+
+}
+.section-mananera .container-mananera{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 3rem;
+}
+.section-mananera .container-mananera .title-mananera,
+.section-mananera .container-mananera .banner-mananera{    
+    height: auto;
+    width: 85%;
+}
+.section-mananera .container-mananera .title-mananera{
+    flex-direction: column;    
+}
+.section-mananera .container-mananera .title-mananera h2{
+    font-size: 3.8rem;
+    color: var(--color_twine_4000);
+}
+.section-mananera .container-mananera .title-mananera p,
+.section-mananera .container-mananera .title-mananera h4{
+    color: var(--color_silver_400);
+}
+.section-mananera .container-mananera .title-mananera h4{
+    font-size: 2rem;
+}
+.section-mananera .container-mananera .title-mananera p{
+    font-size: 1.5rem;
+}
+.section-mananera .container-mananera .banner-mananera{
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;    
+    padding: 1rem;
+    text-decoration: none;
+}
+.section-mananera .container-mananera .banner-mananera img{
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
+.section-mananera .container-mananera .banner-mananera h2{
+    font-size: 1.7rem;
+    color: var(--color_silver_400);
+}
+/*-------------------------------------------------------------
+# Seccion Input del Buscador
+--------------------------------------------------------------*/
+.section-mananera .search-mananera{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+.section-mananera .search-mananera .title-results{    
+    height: auto;
+    width: 85%;
+}
+.section-mananera .search-mananera .title-results h2{
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: var(--color_twine_4000);
+}
+.section-mananera .search-mananera .input-search{
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0rem;
+    width: 100%;
+}
+.section-mananera .search-mananera .input-search .search{
+    cursor: pointer;
+    border-radius: 3rem;
+    background: var(--color_we_peep_200);
+    font-size: 1.3rem;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    transition: all ease-in-out .5s;
+    width: 50%;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
+    align-items: center;
+    gap: 0.4rem;
+}
+.section-mananera .search-mananera .input-search .search::-webkit-search-cancel-button {
+    cursor: pointer;
+}
+.section-mananera .search-mananera .input-search .search:hover, 
+.section-mananera .search-mananera .input-search .search:focus {
+    box-shadow: 0 0 1rem #f2f2f2b3;
+}
+.section-mananera .search-mananera .input-search .search i{
+    color: var(--color_deep_bronze_950);
+}
+.section-mananera .search-mananera .input-search .search .search_in {
+    color: var(--color_deep_bronze_950);
+    background: var(--color_we_peep_200);
+    border: 0.5px solid var(--color_we_peep_200);
+    border: none;
+    font-size: 1.3rem;
+    padding: 1.5rem 1rem 1.5rem 0rem;
+    width: 100%;
+}
+.section-mananera .search-mananera .input-search .search .search_in:-webkit-autofill {
+    -webkit-text-fill-color: #000; 
+    box-shadow: 0 0 0 50px var(--color_we_peep_200) inset; 
+}
+.section-mananera .search-mananera .input-search .search .search_in::-webkit-search-cancel-button {
+    cursor: pointer;
+}
+.section-mananera .search-mananera .input-search .search .search_in::-webkit-input-placeholder {
+    font-weight: 100;
+    color: #48321089;
+}
+.section-mananera .search-mananera .input-search .search .search_in:focus-visible {
+    border: 0.5px solid var(--color_silver_chalice_400);
+    border: none;
+    outline: none;
+}
+.section-mananera .search-mananera .input-search .search .search_in:focus + .search__button {
+    box-shadow: 0 0 1rem #00000075;
+}
+.section-mananera .search-mananera .input-search .search .search__button {
+    color: var(--color_white_50);
+    background: var(--color_twine_4000);
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.1rem;
+    height: auto;
+    padding: 1.2rem;
+    width: 7rem;
+    text-shadow: 0 0 7px #00000096;
+}
+.section-mananera .search-mananera .input-search .search .search__button:hover {
+    cursor: pointer;
+}
+.section-mananera .search-mananera .input-search .button-search{
+    background: var(--color_white_50);
+    padding: 4%;
+    margin-right: 5%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    width: 20%;
+    cursor: pointer;
+}
+.section-mananera .search-mananera .input-search p{
+    color: var(--color_sazerac_50);
+    font-size: 2rem;
+    padding: 1rem 0rem;
+}
+.section-mananera .search-mananera .input-search .filters-search{
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+.section-mananera .search-mananera .input-search .filters-search .item-filter{
+    background: var(--color_twine_4000);
+    border: none;
+    border-radius: 0.5rem;
+    color: var(--color_sazerac_50);
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 1rem;
+    -webkit-border-radius: 0.5rem;
+    -moz-border-radius: 0.5rem;
+    -ms-border-radius: 0.5rem;
+    -o-border-radius: 0.5rem;
+}
+/*-------------------------------------------------------------
+# Seccion Resultados del Buscador
+--------------------------------------------------------------*/
+.section-mananera .search-mananera .results{
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding-top: 2rem;
+}
+.section-mananera .search-mananera .results .item-result{
+    background-color: #fffcf8;
+    border-radius: 0.5rem;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    max-width: 331px;
+    text-decoration: none;
+    box-shadow: 0px 0px 15px 2px #ffffff75;
+}
+.section-mananera .search-mananera .results .item-result .img-pgm{
+    width: 100%;
+    height: auto;
+}
+.section-mananera .search-mananera .results .item-result .img-pgm picture{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.section-mananera .search-mananera .results .item-result .img-pgm picture img{
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+    -webkit-border-radius: 0.5rem 0.5rem 0rem 0rem;
+    -moz-border-radius: 0.5rem 0.5rem 0rem 0rem;
+    -ms-border-radius: 0.5rem 0.5rem 0rem 0rem;
+    -o-border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+.section-mananera .search-mananera .results .item-result .info-pgm{
+    width: 100%;
+    height: 100%;
+    padding: 0.3rem 0.5rem 1rem;
+}
+.section-mananera .search-mananera .results .item-result .info-pgm h2{
+    font-size: 1.5rem;
+    margin-bottom: 9px;
+    margin-top: 0px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #000;
+}
+.section-mananera .search-mananera .results .item-result .info-pgm p{
+    color: #000;
+    font-size: 1.2rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+@media (max-width: 991px) {
+    /*-------------------------------------------------------------
+    # Seccion Principal Mañanera
+    --------------------------------------------------------------*/
+    .section-mananera .container-mananera{
+        padding: 1rem 2rem;
+    }
+    .section-mananera .container-mananera .title-mananera,
+    .section-mananera .container-mananera .banner-mananera{    
+        width: 100%;
+    }
+    /*-------------------------------------------------------------
+    # Seccion Input del Buscador
+    --------------------------------------------------------------*/
+    .section-mananera .search-mananera{
+        padding: 1rem 2rem;
+    }
+    .section-mananera .search-mananera .title-results{
+        width: 100%;
+    }
+    .section-mananera .search-mananera .input-search .search{
+        width: 80%;   
+    }
+    .section-mananera .search-mananera .input-search .filters-search{
+        gap: 0.5rem;
+    }
+    .section-mananera .search-mananera .input-search .filters-search .item-filter{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 750px) {
+    /*-------------------------------------------------------------
+    # Seccion Principal Mañanera
+    --------------------------------------------------------------*/
+    .section-mananera .container-mananera .title-mananera h2{
+        font-size: 3rem;
+    }
+    .section-mananera .container-mananera .title-mananera h4{
+        font-size: 1.5rem;
+    }
+    .section-mananera .container-mananera .title-mananera p {
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: 650px) {
+    /*-------------------------------------------------------------
+    # Seccion Principal Mañanera
+    --------------------------------------------------------------*/
+    .section-mananera .container-mananera .title-mananera h2{
+        font-size: 2.5rem;
+    }
+    .section-mananera .container-mananera .banner-mananera{
+        padding: 1rem 0rem;   
+    }
+    .section-mananera .container-mananera .banner-mananera h2{
+        font-size: 1.5rem;
+    }
+    /*-------------------------------------------------------------
+    # Seccion Input del Buscador
+    --------------------------------------------------------------*/
+    .section-mananera .search-mananera .title-results h2{
+        font-size: 2.5rem;
+    }
+    .section-mananera .search-mananera .input-search .search{
+        width: 100%;
+        padding: 0.2rem 2rem 0.2rem 2rem;   
+    }
+    .section-mananera .search-mananera .input-search .filters-search{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .section-mananera .search-mananera .input-search .filters-search .item-filter{
+        font-size: 1.1rem;
+        padding: 0.7rem;
+    }    
+}
+@media (max-width: 480px) {
+    /*-------------------------------------------------------------
+    # Seccion Input del Buscador
+    --------------------------------------------------------------*/
+    .section-mananera .search-mananera .input-search .search {
+        width: 100%;
+        padding: 0.2rem 1rem 0.2rem 1rem;
+    }
+    .section-mananera .search-mananera .input-search .search .search_in{
+        font-size: 1.1rem;
+    }
+    .section-mananera .search-mananera .input-search .search .search__button{
+        padding: 0.8rem;
+    }
+}

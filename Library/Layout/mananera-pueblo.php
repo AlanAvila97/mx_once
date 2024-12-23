@@ -17,6 +17,9 @@
     <meta name="twitter:site" content="">
     <!-- Elements Header -->
 	<?php require_once("./Library/Layout/components/header_elements.php");?>
+    <!--  -->
+    <link rel="stylesheet" href="./assets/css/mananera-pueblo.css" media="none" onload="if(media!='all')media='all'"/>
+    <noscript><link rel="stylesheet" href="./assets/css/mananera-pueblo.css"></noscript>
 <body class="mananera">
     <!-- Preloader -->
 	<?php require_once("./Library/Layout/components/preloader.php");?>
@@ -24,13 +27,17 @@
     <!-- Navbar -->
 	<?php require_once("./Library/Layout/components/nabvar.php");?>
     <!-- End Navbar -->
-    <!-- View -->
-	<?php require_once("./Library/Layout/views/mananera_pueblo_view.php");?>
-    <!-- End View -->
+    <main id="wrapper">     
+        <!-- View -->
+        <?php require_once("./Library/Layout/views/mananera_pueblo_view.php");?>
+        <!-- End View -->
+    </main>
     <!-- Footer  -->
 	<?php require_once("./Library/Layout/components/footer.php");?>
     <!-- End Footer  -->     
     <!--  Footer Elements  -->
     <?php require_once("./Library/Layout/components/footer_elements.php");?>
     <!-- End Footer Elements-->
+    <!--  -->
+    <script defer src="./assets/js/mananera-pueblo.js"></script>
 </body>

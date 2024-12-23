@@ -1,3 +1,9 @@
+body.bg-envivo-digital::after{
+    /* background: url(https://canaloncetv.s3.us-east-1.amazonaws.com/REST/data/images/fondo_once_digital_2400x1400.jpg); */
+    background: url(../images/Fondo-TV-internacional-1920-1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /*-------------------------------------------------------------
 # Section En vivo
 --------------------------------------------------------------*/
@@ -28,6 +34,7 @@
 }
 .section-reproductor-live .container-reproductor-live .title-reproductor-live.logo-once3 picture img{
     width: auto;
+    height: 130px;
     max-height: 130px;
 }
 .section-reproductor-live .container-reproductor-live .content-reproductor-live{
@@ -47,7 +54,7 @@
     max-width: 950px;
 }
 .section-reproductor-live .container-reproductor-live .content-reproductor-live .center-items {
-    box-shadow: 0px 0px 19px 5px #ffffffba;
+    box-shadow: 0px 0px 7px 1px #ffffffba;
     display: flex;
     justify-content: center;
     align-items: center;    

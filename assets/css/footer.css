@@ -1,6 +1,9 @@
 /*-------------------------------------------------------------
 # Seccion Footer
 -------------------------------------------------------------*/
+.footer{
+    background: var(--color_cinder_950);
+}
 .footer .container-footer{
     padding: 2rem 0rem 3rem;
     width: 100%;

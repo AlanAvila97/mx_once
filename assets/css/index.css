@@ -1,9 +1,12 @@
+.bg-pgm{
+    background-image: url(../images/Fondo_banner_inicio_1920-1080.jpg);
+    background-size: 111% 100%;
+    background-position: 0rem -11rem;
+    background-repeat: no-repeat;
+}
 /*-------------------------------------------------------------
 # Seccion Header
 --------------------------------------------------------------*/
-.section-header{
-    background-color: var(--color_barossa_950);
-}
 .section-header .container-header{
     height: 100%;
     width: 100%;
@@ -12,11 +15,11 @@
     padding: 1rem 3rem;
 }
 .section-header .container-header .sinopsis-mx{
-    width: 59%;
+    width: 55%;
     flex-direction: column;
 }
 .section-header .container-header .sinopsis-mx .info{
-    padding: 2rem;
+    padding: 4rem 2rem;
 }
 .section-header .container-header .sinopsis-mx .info h2{
     color: var(--color_sazerac_50);
@@ -29,7 +32,7 @@
 # Seccion Slider Head
 --------------------------------------------------------------*/
 .section-slider-header{
-    background: linear-gradient(180deg, var(--color_barossa_950) 50%, var(--color_jazzberry_jam_900) 50%);
+    background: linear-gradient(180deg, transparent 50%, var(--color_jazzberry_jam_900) 50%);
 }
 .section-slider-header .container-slider-header{
     height: 100%;
@@ -302,6 +305,17 @@
     object-fit: cover;
     border-radius: 50%;
 }
+@media (max-width: 1100px){
+    .bg-pgm{
+        background-size: 200% 100%;
+    }
+    /*-------------------------------------------------------------
+    # Seccion Header
+    --------------------------------------------------------------*/
+    .section-header .container-header .sinopsis-mx{
+        width: 60%;
+    }
+}
 @media (max-width: 991px){
     /*-------------------------------------------------------------
     # Seccion Header
@@ -310,7 +324,7 @@
         padding: 1rem 1.2rem;
     }
     .section-header .container-header .sinopsis-mx{
-        width: 80%;
+        width: 100%;
     }
     .section-header .container-header .sinopsis-mx .info{
         padding: 2rem 0rem;

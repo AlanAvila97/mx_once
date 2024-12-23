@@ -1,0 +1,376 @@
+.section-interior-program{
+    background-color: var(--color_ebony_950);
+}
+.section-interior-program .container-programs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 3rem;
+}
+.container-info-pgm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    align-items: flex-start;
+}
+.container-info-pgm .description-pgm{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-self: flex-start;
+}
+.container-info-pgm .description-pgm .content-img-logo{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container-info-pgm .description-pgm .content-img-logo .logo-pgm{
+    width: auto;
+    height: auto;
+}
+
+.container-info-pgm .description-pgm .title-pgm{
+    width: 100%;
+    text-align: center;
+    border-bottom: 2px solid #fff; 
+}
+.container-info-pgm .description-pgm .title-pgm h1{
+    color: var(--color_sazerac_50);
+    line-height: 1.5em;
+    font-size: 2rem;
+}
+.container-info-pgm .description-pgm .sinopsis-pgm{
+    border-bottom: 2px solid var(--color_sazerac_50); 
+    padding-bottom: 2%;
+    width: 100%;
+}
+.container-info-pgm .description-pgm .sinopsis-pgm h3{
+    color: var(--color_sazerac_50);
+    font-size: 1.2rem;    
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.container-info-pgm .description-pgm .sinopsis-pgm p{
+    color: var(--color_sazerac_50);
+    font-size: 1.1rem;    
+}
+.container-info-pgm .trailer-pgm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 65%;
+    gap: 1rem;
+}
+.container-info-pgm .trailer-pgm .trailer{
+    background-image: url(https://canaloncetv.s3.us-east-1.amazonaws.com/REST/data/images/once-mas-lg.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 100%;
+    height: 100%;
+    padding: 25%;
+}
+.container-info-pgm .trailer-pgm .trailer .logo-once-plus{
+    width: 50%;
+    height: auto;
+}
+.container-info-pgm .trailer-pgm .trailer .logo-once-plus img{
+    width: 100%;
+    height: auto;
+}
+.container-info-pgm .trailer-pgm .video-trailer{
+    width: 100%;
+    height: auto;
+}
+.container-info-pgm .trailer-pgm .video-trailer video{
+    width: 100%;
+    height: 100%;
+}
+.container-info-pgm .trailer-pgm .content-share{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: end;
+    align-items: center;
+    padding-right: 2%;
+}
+.container-info-pgm .trailer-pgm .content-share img{
+    width: 6%;
+    height: auto;
+    filter: invert(1);
+    -webkit-filter: invert(1);
+    margin-right: 4%;
+    margin-top: 1%;
+}
+.container-info-pgm .trailer-pgm .content-share h3{
+    color: var(--color_sazerac_50);
+    font-size: 1.3rem;
+}
+.container-list-pgms{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+.title-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.title-list h2{
+    color: var(--color_sazerac_50);
+    font-size: 2.2rem;
+}
+.list-episodes{
+    width: 100%;
+    height: 100%;
+}
+.list-episodes .list{
+    list-style: none;
+}
+.list-episodes .list .items-list{
+    margin-bottom: 1.2%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    border-bottom: 2px solid #fff;
+    align-items: center;
+}
+.list-episodes .list .items-list .episode{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: var(--color_sazerac_50);
+    text-decoration: none;
+    height: 100%;
+    width: 95%;
+    align-items: center;
+}
+.list-episodes .list .items-list .episode:hover{
+    color: var(--color_sazerac_50);
+}
+.list-episodes .list .items-list .episode h2{
+    color: var(--color_sazerac_50);
+    font-size: 1.1rem;
+}
+.list-episodes .list .items-list .episode h3{
+    color: var(--color_sazerac_50);
+    font-size: 1.1rem;
+}
+.list-episodes .list .items-list .episode .play{
+    width: 37px;
+    height: 37px;
+}
+.list-episodes .list .items-list .btn-desc-episode{
+    color: var(--color_sazerac_50);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 2rem;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+}
+.list-episodes .list .items-list .btn-desc-episode:after {
+    content: '\002B';
+    font-weight: bold;
+}
+.list-episodes .list .items-list .btn-desc-episode.active:after {
+    content: "\2212";
+    color: var(--color_white_50);
+    font-weight: bold;
+}
+.list-episodes .list .items-list .info-sinopsis{
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.list-episodes .list .items-list .info-sinopsis p{
+    color: var(--color_sazerac_50);
+    font-size: 1.1rem;
+}
+/*-------------------------------------------------------------
+# Seccion Programas Aleatorios
+--------------------------------------------------------------*/
+.section-random-program .container-random-programs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 2% 4% 0%;
+}
+.section-random-program .container-random-programs .title-random-programs{
+    color: var(--color_sazerac_50);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.section-random-program .container-random-programs .title-random-programs h1{
+    text-transform: uppercase;
+    font-size: 2.3rem;
+}
+.section-random-program .container-random-programs .title-random-programs h2{
+    text-transform: uppercase;
+    font-size: 2.3rem;
+}
+.section-random-program .container-random-programs .title-random-programs picture{
+    width: auto;
+    height: auto;
+}
+.section-random-program .container-random-programs .title-random-programs picture img{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+}
+.section-random-program .container-random-programs .swiper {
+    width: 100%;
+    height: 400px;
+    height: auto;
+}
+.section-random-program .container-random-programs .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.section-random-program .container-random-programs .swiper-slide  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color_sazerac_50);
+}
+.section-random-program .container-random-programs .swiper-slide  a:hover {
+    color: var(--color_sazerac_50);
+}
+.section-random-program .container-random-programs .swiper-slide  a picture{
+    width: 100%;
+    height: auto;
+}
+.section-random-program .container-random-programs .swiper-slide  a picture img{
+    width: 100%;
+    height: auto;
+}
+.section-random-program .container-random-programs .swiper-slide a h2{
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.section-random-program .container-random-programs .swiper-slide a h3{
+    width: auto;
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.section-random-program .container-random-programs .swiper-slide a small{
+    color: #000000;
+    position: absolute;
+    bottom: 0px;
+    left: 5px;
+    background: #ffffffdb;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px #fff;
+}
+/*-------------------------------------------------------------
+# Seccion Banner Promocional
+--------------------------------------------------------------*/
+.section-random-program .container-promotional-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1% 4% 0%;
+}
+.section-random-program .container-promotional-banner h2{
+    visibility: hidden;
+    display: none;
+}
+.section-random-program .container-random-programs .swiper-slide  a {
+    width: 100%;
+    height: 100%;
+}
+.section-random-program .container-promotional-banner a picture{
+    width: 100%;
+    height: auto;
+}
+.section-random-program .container-promotional-banner a picture img{
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 991px){
+    .container-info-pgm{
+        flex-direction: column; 
+    }
+    .container-info-pgm .description-pgm{
+        width: 100%;
+        padding: 2% 0%;    
+    }
+    .container-info-pgm .description-pgm .sinopsis-pgm h3{
+        font-size: 1.5rem;
+    }
+    .container-info-pgm .trailer-pgm {
+        background-size: cover;
+        height: auto;
+        width: 100%;
+    }
+    .title-list{
+        width: 100%;
+    }
+    .list-episodes{
+        width: 100%;
+    }
+}
+@media (max-width: 480px){
+    .section-random-program .container-random-programs .title-random-programs picture img{
+        max-height: 37px;
+    }
+    .section-random-program .container-random-programs .title-random-programs h2{
+        font-size: 1.7rem;
+    }
+    /*-------------------------------------------------------------
+    # Seccion Programas de VOD
+    --------------------------------------------------------------*/
+    .section-random-program .container-random-programs .swiper-slide{
+        width: 80%!important;
+    }
+    .section-random-program .container-random-programs .swiper-slide a picture img{
+        height: auto;
+    }
+}

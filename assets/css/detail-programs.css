@@ -1,0 +1,261 @@
+/*-------------------------------------------------------------
+# Detalle de los Videos
+--------------------------------------------------------------*/
+.section-detail-video{
+    padding-top: 100px;
+    background-color: var(--color_ebony_950);
+}
+.section-detail-video .container-video{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 65% 30%;
+    grid-column-gap: 0;
+    padding: 2% 4% 0%;
+    justify-content: space-between;
+}
+.section-detail-video .container-video .video-info{
+    display: flex;
+    flex-direction: column;
+}
+.section-detail-video .container-video .video-info .video-episode{
+    width: 100%;
+}
+.section-detail-video .container-video .video-info .video-episode video{
+    box-shadow: 0px 0px 8px 1px #fff9;
+}
+.section-detail-video .container-video .video-info .video-episode video-js{
+    box-shadow: 0px 0px 8px 1px #fff9;
+}
+.section-detail-video .container-video .video-info .info-episode{
+    padding-top: 2%;
+}
+.section-detail-video .container-video .video-info .info-episode {
+    color: var(--color_sazerac_50);
+    font-family: "dinnextltprobold";
+}
+.section-detail-video .container-video .video-info .info-episode .episode{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;   
+}
+.section-detail-video .container-video .video-info .info-episode .episode .title{
+    font-size: 1.8em;
+    line-height: 1em;
+    text-align: center;
+    margin: 0;
+}
+.section-detail-video .container-video .video-info .info-episode .episode a{
+    text-decoration: none;
+}
+.section-detail-video .container-video .video-info .info-episode .episode a i{
+    color: var(--color_sazerac_50);
+    cursor: pointer;
+    display: none;
+    font-size: 2.5em;
+}
+.section-detail-video .container-video .video-info .info-episode .sinopsis{
+    font-size: 1.2em;
+    line-height: 1.7rem;
+    margin-top: 1%;
+}
+.section-detail-video .container-video .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.section-detail-video .container-video .details .pgm-description{
+    color: var(--color_sazerac_50);
+    border-bottom: 2px solid var(--color_white_50);
+    font-family: "dinnextltprobold";
+    width: 100%;
+}
+.section-detail-video .container-video .details .pgm-description .pgm{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 1%;
+}
+.section-detail-video .container-video .details .pgm-description .content-img-logo{
+    width: 100%;
+    display: flex;
+}
+.section-detail-video .container-video .details .pgm-description .pgm .content-logo-pgm{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.logo-pgm{
+    width: 100%;
+    height: auto;
+}
+.section-detail-video .container-video .details .pgm-description .pgm h2{
+    font-size: 1.8rem;
+    line-height: 1em;
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+}
+.section-detail-video .container-video .details .pgm-description .pgm a{
+    text-decoration: none;
+}
+.section-detail-video .container-video .details .pgm-description .pgm a i{ 
+    color: var(--color_sazerac_50);
+    cursor: pointer;
+    font-size: 2.5em;
+}
+.section-detail-video .container-video .details .pgm-description p{
+    font-size: 1.2em;
+}
+.section-detail-video .container-video .details .episodes-list{
+    width: 100%;
+    padding-top: 3%;
+}
+.section-detail-video .container-video .details .episodes-list .title-list{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3%;
+    padding-bottom: 3%;
+    border-bottom: 2px solid #fff;
+}
+.section-detail-video .container-video .details .episodes-list .title-list .episodios-titulo{
+    color: var(--color_sazerac_50);
+    font-size: 2rem;
+    margin: 0;
+}
+
+.section-detail-video .container-video .details .episodes-list::-webkit-scrollbar{
+    width: 13px;
+    height: 15px;
+    cursor: pointer;
+}
+.section-detail-video .container-video .details .episodes-list::-webkit-scrollbar-thumb{
+    background: #acacac;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.section-detail-video .container-video .details .episodes-list .list{
+    list-style: none;
+    padding: 0;
+    border-color: var(--color_white_50);
+    padding-top: 1px;
+    width: 100%;
+    height: 350px;
+    overflow-y: scroll;
+}
+.section-detail-video .container-video .details .episodes-list .list .active-item{
+    background: #404040;
+    box-shadow: inset 0px 0px 5px 2px #00000082;
+}
+.section-detail-video .container-video .details .episodes-list .list .active-item a{
+    text-shadow: -3px 2px 2px #0c0c0c;
+}
+.section-detail-video .container-video .details .episodes-list .list::-webkit-scrollbar{
+    width: 13px;
+    height: 15px;
+    cursor: pointer;
+}
+.section-detail-video .container-video .details .episodes-list .list::-webkit-scrollbar-thumb{
+    background: #acacac;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.section-detail-video .container-video .details .episodes-list .list .episode-item{
+    width: 100%;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}
+.section-detail-video .container-video .details .episodes-list .list .episode-item a{
+    color: var(--color_sazerac_50);
+    text-decoration: none;
+    width: 100%;
+}
+.section-detail-video .container-video .details .episodes-list .list .episode-item a h3{
+    font-size: 1.2em;
+    line-height: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    width: 99%;
+}
+@media (max-width: 1200px){
+    .section-detail-video .container-video{
+        grid-template-columns: 1fr 350px;
+    }
+}
+@media (max-width: 991px){
+    .section-detail-video .container-video{
+        grid-template-columns: auto;
+    }
+    .section-detail-video .container-video .video-info{
+        border-bottom: 3px solid #FFF;
+        margin-bottom: 1%;
+    }
+    .section-detail-video .container-video .video-info .info-episode .episode{
+        justify-content: space-between;
+    }
+    .section-detail-video .container-video .video-info .info-episode .episode a i{
+        display: block;
+    }
+    .section-detail-video .container-video .details .pgm-description{
+        display: none;
+    }
+    .section-detail-video .container-video .details .episodes-list .list{
+        padding: 0;
+    }
+    .section-detail-video .container-video .details .episodes-list .list{
+        height: 100%;
+        overflow-y: auto;
+    }
+    .section-detail-video .container-video .details .episodes-list .list .episode-item h3{
+        white-space: break-spaces;
+    }
+}
+@media (max-width: 600px){
+    .section-detail-video .container-video .video-info .info-episode .episode .title{
+        font-size: 1.8em; 
+        text-align: center;       
+    }
+}
+@media (max-width: 500px){
+    .section-detail-video .container-video .video-info .info-episode .episode .title{
+        font-size: 1.7em;        
+    }
+    .section-detail-video .container-video .video-info .info-episode .episode a i{
+        font-size: 2.2em;
+    }
+    .section-detail-video .container-video .video-info .info-episode .sinopsis {
+        font-size: 1.1em;
+    }
+    .section-detail-video .container-video .details .episodes-list .list .episode-item{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+}
+@media (max-width: 450px){
+    .section-detail-video .container-video .video-info .info-episode .episode .title{
+        font-size: 1.5em;       
+    }
+}
+@media (max-width: 400px){
+    .section-detail-video .container-video .video-info .info-episode .episode .title{
+        font-size: 1.3em;       
+    }
+}

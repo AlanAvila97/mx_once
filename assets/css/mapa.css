@@ -1,0 +1,67 @@
+/*-------------------------------------------------------------
+# Seccion Banner Noticias
+--------------------------------------------------------------*/
+.section-radio {
+    background-color: var(--color_barossa_950);
+}
+.section-radio .container-radio {
+    height: 100%;
+    width: 100%;
+    padding: 1rem 3rem;
+    justify-content: center;
+    align-items: center;
+}
+.section-radio .container-radio  .controls {
+    background: cyan;
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 12px;
+    border-radius: 16px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.section-radio .container-radio  .controls button {
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: #000;
+    width: fit-content;
+    padding: 8px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+}
+.section-radio .container-radio  .controls button svg {
+    width: 35px;
+    height: 35px;
+}
+.section-radio .container-radio .mindmap-button {
+    cursor: pointer;
+}     
+.section-radio .container-radio  .mindmap-button rect, .mindmap-button path {
+    transition: fill 0.3s;
+}
+.section-radio .container-radio  .mindmap-button:hover rect {
+    fill: cyan;
+}
+.section-radio .container-radio  .mindmap-button:hover path {
+    fill: black;
+}
+.section-radio .container-radio  .cat-1{
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+    -webkit-filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+.section-radio .container-radio  .azul{
+    width: 100%;
+}
+.section-radio .container-radio  path {
+    stroke: rgba(255, 255, 255, 0.273);
+}

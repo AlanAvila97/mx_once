@@ -18,6 +18,9 @@
     <meta name="twitter:site" content="">
     <!-- Elements Header -->
 	<?php require_once("./Library/Layout/components/header_elements.php");?>
+    <!--  -->
+    <link rel="stylesheet" href="./assets/css/mapa.css" media="none" onload="if(media!='all')media='all'"/>
+    <noscript><link rel="stylesheet" href="./assets/css/mapa.css"></noscript>
 <body class="radio">
     <!-- Preloader -->
 	<?php require_once("./Library/Layout/components/preloader.php");?>
@@ -25,13 +28,18 @@
     <!-- Navbar -->
 	<?php require_once("./Library/Layout/components/nabvar.php");?>
     <!-- End Navbar -->
-    <!-- View -->
-	<?php require_once("./Library/Layout/views/radio_view.php");?>
-    <!-- End View -->
+    <main id="wrapper">
+        <!-- View -->
+        <?php require_once("./Library/Layout/views/radio_view.php");?>
+        <!-- End View -->
+    </main>
     <!-- Footer  -->
 	<?php require_once("./Library/Layout/components/footer.php");?>
     <!-- End Footer  -->     
     <!--  Footer Elements  -->
     <?php require_once("./Library/Layout/components/footer_elements.php");?>
     <!-- End Footer Elements-->
+    <!--  -->
+    <script src='https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.5.0/dist/svg-pan-zoom.min.js'></script>    
+    <script defer src="./assets/js/mapa.js"></script>
 </body>

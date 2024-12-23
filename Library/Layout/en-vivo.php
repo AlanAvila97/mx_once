@@ -17,15 +17,10 @@
     <meta name="twitter:site" content="">
     <!-- Elements Header -->
 	<?php require_once("./Library/Layout/components/header_elements.php");?>
-    <!-- Video JS -->  
-    <link rel="stylesheet" href="./assets/css/videojs/video-js.min.css" media="none" onload="if(media!='all')media='all'"/>
-    <noscript><link rel="stylesheet" href="./assets/css/videojs/video-js.min.css"></noscript>
-    <link rel="stylesheet" href="./assets/css/videojs/videojs-http-source-selector.css" media="none" onload="if(media!='all')media='all'"/>
-    <noscript><link rel="stylesheet" href="./assets/css/videojs/videojs-http-source-selector.css"></noscript>
     <!--  -->
-    <link rel="stylesheet" href="./assets/css/en-vivo.css" media="none" onload="if(media!='all')media='all'"/>
-    <noscript><link rel="stylesheet" href="./assets/css/en-vivo.css"></noscript>
-<body class="en-vivo">
+    <link rel="stylesheet" href="./assets/css/mapa.css" media="none" onload="if(media!='all')media='all'"/>
+    <noscript><link rel="stylesheet" href="./assets/css/mapa.css"></noscript>
+<body class="en-vivo bg-envivo-digital">
     <!-- Preloader -->
 	<?php require_once("./Library/Layout/components/preloader.php");?>
     <!-- End Preloader -->
@@ -43,19 +38,7 @@
     <!--  Footer Elements  -->
     <?php require_once("./Library/Layout/components/footer_elements.php");?>
     <!-- End Footer Elements-->
-    <!-- Moment JS -->
-    <script defer src="./assets/js/momentjs/moment.js"></script>
-	<script defer src="./assets/js/momentjs/moment-with-locales.js"></script>
-	<script defer src="./assets/js/momentjs/moment-timezone-with-data.js"></script>
-    <!-- Video Js -->
-    <script defer src="./assets/js/videojs/video.min.js"></script>
-    <script defer src="./assets/js/videojs/Youtube.min.js"></script>
-    <script defer src='./assets/js/videojs/videojs-http-source-selector.js'></script>
-    <script defer src='./assets/js/videojs/videojs-contrib-quality-levels.min.js'></script>
-    <script defer src="./assets/js/videojs/videojs-landscape-fullscreen.min.js"></script>
-    <script defer src="./assets/js/videojs/videojs-player-analytics.js"></script>
-    <script defer src="./assets/js/videojs/videojs-vimeo.umd.js"></script>
-    <script defer src="./assets/js/videojs/videojs.hotkeys.min.js"></script>
     <!--  -->
-    <script defer src="./assets/js/en-vivo.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.5.0/dist/svg-pan-zoom.min.js'></script>    
+    <script defer src="./assets/js/mapa_tv.js"></script>
 </body>

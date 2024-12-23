@@ -1,14 +1,13 @@
 // Setup
-
 var panZoom = svgPanZoom("#svg", {
-    zoomEnabled: true,
-    controlIconsEnabled: false,
-    preventMouseEventsDefault: false,
-    mouseWheelZoomEnabled: true,
-    dblClickZoomEnabled: false,
-    fit: 1,
-    center: 1
-  });
+  zoomEnabled: true,
+  controlIconsEnabled: false,
+  preventMouseEventsDefault: false,
+  mouseWheelZoomEnabled: false,
+  dblClickZoomEnabled: false,
+  fit: 1,
+  center: 1
+});
   
   window.mobileCheck = function() {
     let check = false;
@@ -47,13 +46,13 @@ var panZoom = svgPanZoom("#svg", {
   var button1 = document.getElementById("MX-BCN")
   button1.addEventListener("click", function() {
     let mob = mobileCheck();
-  if(!mob){
-    console.log(mob);
-    const { left, width, top, height } = button1.getBoundingClientRect();
-    customPanBy({x: left + width/2, y: top + height/2});
-  }
-  
-  playRadio('https://s2.mexside.net/8220/stream');
+    if(!mob){
+      console.log(mob);
+      const { left, width, top, height } = button1.getBoundingClientRect();
+      customPanBy({x: left + width/2, y: top + height/2});
+    }
+    
+    playRadio('https://s2.mexside.net/8220/stream');
   });
   
   var button2 = document.getElementById("MX-BCS")
@@ -207,16 +206,13 @@ var panZoom = svgPanZoom("#svg", {
           hoverableElements.forEach(elemento => {
   
             if(element.id === elemento.id){
+              const jsonEpisode = fetchData(`https://canaloncetv.s3.amazonaws.com/REST/data/mdb/episodes/desktop/${slugc}.json?cache=${Date.now()}`);
               elemento.setAttribute('style', 'fill:white;fill-opacity:0.1;stroke-width:0.35408;stroke:white;'); // Change fill color on hover
               
             }
             if(element.id != elemento.id){
               elemento.setAttribute('style', 'fill:#000;fill-opacity:0.8;stroke-width:0.35408;stroke: rgba(255, 255, 255, 0.273);'); // Change fill color on hover
             }
-  
-            
-            
-  
             });
     
           });

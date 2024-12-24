@@ -1,0 +1,157 @@
+/*-------------------------------------------------------------
+# Seccion Biblioteca Mañanera
+--------------------------------------------------------------*/
+.section-biblioteca-mananera{
+    background-color: var(--color_barossa_950);
+}
+.section-biblioteca-mananera .container-biblioteca-mananera{
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 3rem;
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .title-biblioteca-mananera,
+.section-biblioteca-mananera .container-biblioteca-mananera .video-nota,
+.section-biblioteca-mananera .container-biblioteca-mananera .content-note,
+.section-biblioteca-mananera .container-biblioteca-mananera .description-nota{
+    width: 100%;
+    height: auto;
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .title-biblioteca-mananera{
+    flex-direction: column;      
+    border-bottom: 0.1rem solid #fff; 
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .title-biblioteca-mananera h2{
+    font-size: 3.8rem;
+    color: var(--color_twine_4000);
+    padding-bottom: 0.5rem;
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .title-biblioteca-mananera p{
+    font-size: 1.5rem;
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .video-nota{
+    padding-top: 1rem;
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .video-nota img{
+    width: 100%;
+    height: auto;
+    max-height: 550px;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .content-note{
+    grid-template-columns: 1fr 20%;
+    padding-top: 1rem;
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .content-note .description-nota{
+    width: 100%;
+    height: auto;
+    color: var(--color_silver_400);
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .content-note .description-nota h2{
+    font-size: 2.5rem;  
+    color: var(--color_twine_4000);
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .content-note .description-nota p{
+    font-size: 1.5rem;  
+    padding: 0.2rem 0rem;  
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .content-note .description-nota a{
+    font-size: 1.5rem;  
+    color: var(--color_twine_4000);
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .content-note .sidebar-note,
+.section-biblioteca-mananera .container-biblioteca-mananera .content-note .sidebar-note .icon-note{
+    width: 100%;
+    height: auto;
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .content-note .sidebar-note{
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .content-note .sidebar-note .icon-note{
+    flex-direction: column;
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: var(--color_silver_400);
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .content-note .sidebar-note .icon-note:hover{
+    color: var(--color_silver_400);
+}
+.section-biblioteca-mananera .container-biblioteca-mananera .content-note .sidebar-note .icon-note h4{
+    font-size: 1.1rem;
+}
+@media (max-width: 991px) {
+    /*-------------------------------------------------------------
+    # Seccion Biblioteca Mañanera
+    --------------------------------------------------------------*/
+    .section-biblioteca-mananera .container-biblioteca-mananera{
+        padding: 1rem 2rem;
+    }
+    .section-biblioteca-mananera .container-biblioteca-mananera .title-biblioteca-mananera h2{
+        font-size: 3rem;
+    }
+    .section-biblioteca-mananera .container-biblioteca-mananera .video-nota img{
+        max-height: 400px;
+    }
+    .section-biblioteca-mananera .container-biblioteca-mananera .content-note .sidebar-note .icon-note h4{
+        text-align: center;
+    }
+}
+@media (max-width: 750px) {
+    /*-------------------------------------------------------------
+    # Seccion Biblioteca Mañanera
+    --------------------------------------------------------------*/
+    .section-biblioteca-mananera .container-biblioteca-mananera .video-nota,
+    .section-biblioteca-mananera .container-biblioteca-mananera .content-note{
+        padding-top: 0rem;
+    }
+    .section-biblioteca-mananera .container-biblioteca-mananera .content-note{
+        grid-template-columns: 1fr;
+    }
+    .section-biblioteca-mananera .container-biblioteca-mananera .title-biblioteca-mananera h2 {
+        font-size: 2.5rem;
+    }
+    .section-biblioteca-mananera .container-biblioteca-mananera .content-note .description-nota{
+        order: 1;        
+    }
+    .section-biblioteca-mananera .container-biblioteca-mananera .content-note .sidebar-note{
+        order: 0;
+    }    
+    .section-biblioteca-mananera .container-biblioteca-mananera .video-nota img {
+        max-height: 350px;
+    }
+    .section-biblioteca-mananera .container-biblioteca-mananera .content-note .description-nota h2{
+        font-size: 2rem;
+    }
+    .section-biblioteca-mananera .container-biblioteca-mananera .content-note .description-nota p,
+    .section-biblioteca-mananera .container-biblioteca-mananera .content-note .description-nota a{
+        font-size: 1.2rem;
+    }
+    .section-biblioteca-mananera .container-biblioteca-mananera .content-note .sidebar-note{
+        flex-direction: row;
+    }
+}
+@media (max-width: 480px) {
+    /*-------------------------------------------------------------
+    # Seccion Biblioteca Mañanera
+    --------------------------------------------------------------*/
+    .section-biblioteca-mananera .container-biblioteca-mananera .title-biblioteca-mananera h2 {
+        font-size: 2.1rem;
+    }
+    .section-biblioteca-mananera .container-biblioteca-mananera .content-note .description-nota h2 {
+        font-size: 1.7rem;
+    }
+    .section-biblioteca-mananera .container-biblioteca-mananera .content-note .description-nota p,
+    .section-biblioteca-mananera .container-biblioteca-mananera .content-note .description-nota a{
+        font-size: 1rem;
+    }
+}

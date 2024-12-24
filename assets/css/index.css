@@ -257,7 +257,6 @@
     max-height: 400px;
     max-width: 100%;
     object-fit: cover;
-    border-radius: 50%;
 }
 /*-------------------------------------------------------------
 # Seccion latitudes
@@ -340,8 +339,7 @@
     }
     .section-slider-header .container-slider-header .slider-head{
         width: 100%;
-    }
-    
+    }    
     /*-------------------------------------------------------------
     # Seccion Sliders Especiales
     --------------------------------------------------------------*/

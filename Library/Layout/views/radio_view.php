@@ -1,5 +1,9 @@
 <section class="section-radio pt-md-70">
-    <article class="container-radio d-flex">
+    <article class="container-radio d-grid">
+
+        <div class="content-info-map">
+            
+        </div>
         <div class="azul">
             <svg
                 id="svg"

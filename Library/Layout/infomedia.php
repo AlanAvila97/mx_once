@@ -23,7 +23,7 @@
     <!--  -->
     <link rel="preload" href="./assets/css/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="./assets/css/swiper/swiper-bundle.min.css"></noscript>
-<body class="infomedia">
+<body class="infomedia body-overflow-hidden">
     <!-- Preloader -->
 	<?php require_once("./Library/Layout/components/preloader.php");?>
     <!-- End Preloader -->

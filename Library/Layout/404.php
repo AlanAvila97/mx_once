@@ -27,7 +27,7 @@
         }
     </style>
 </head>
-<body class="home">
+<body class="home body-overflow-hidden">
 	<!-- Preloader -->
 	<?php require_once("./Library/Layout/components/preloader.php");?>
     <!-- End Preloader -->

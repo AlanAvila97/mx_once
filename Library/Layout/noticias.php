@@ -20,7 +20,7 @@
     <!-- End Elements Header -->
     <link rel="stylesheet" href="./assets/css/noticias.css" media="none" onload="if(media!='all')media='all'"/>
     <noscript><link rel="stylesheet" href="./assets/css/noticias.css"></noscript>
-<body class="noticias">
+<body class="noticias body-overflow-hidden">
     <!-- Preloader -->
 	<?php require_once("./Library/Layout/components/preloader.php");?>
     <!-- End Preloader -->

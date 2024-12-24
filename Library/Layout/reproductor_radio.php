@@ -20,7 +20,7 @@
     <!--  -->
     <link rel="stylesheet" href="./assets/css/reproductor_radio.css" media="none" onload="if(media!='all')media='all'"/>
     <noscript><link rel="stylesheet" href="./assets/css/reproductor_radio.css"></noscript>
-<body class="en-vivo bg-envivo-digital">
+<body class="en-vivo bg-envivo-digital body-overflow-hidden">
     <!-- Preloader -->
 	<?php require_once("./Library/Layout/components/preloader.php");?>
     <!-- End Preloader -->

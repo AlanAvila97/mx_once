@@ -40,7 +40,7 @@
     <!--  -->
     <link rel="stylesheet" href="./assets/css/biblioteca_mananera.css" media="none" onload="if(media!='all')media='all'"/>
     <noscript><link rel="stylesheet" href="./assets/css/biblioteca_mananera.css"></noscript>
-<body class="biblioteca_mananera">
+<body class="biblioteca_mananera body-overflow-hidden">
     <!-- Preloader -->
 	<?php require_once("./Library/Layout/components/preloader.php");?>
     <!-- End Preloader -->

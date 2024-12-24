@@ -20,7 +20,7 @@
     <!--  -->
     <link rel="stylesheet" href="./assets/css/mananera-pueblo.css" media="none" onload="if(media!='all')media='all'"/>
     <noscript><link rel="stylesheet" href="./assets/css/mananera-pueblo.css"></noscript>
-<body class="mananera">
+<body class="mananera body-overflow-hidden">
     <!-- Preloader -->
 	<?php require_once("./Library/Layout/components/preloader.php");?>
     <!-- End Preloader -->

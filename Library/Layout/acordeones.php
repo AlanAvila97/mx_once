@@ -24,8 +24,7 @@
     <link rel="stylesheet" href="./assets/css/lightbox2/lightbox.css" media="none" onload="if(media!='all')media='all'"/>
     <noscript><link rel="stylesheet" href="./assets/css/lightbox2/lightbox.css"></noscript>
     <!-- End Css Acordeones -->
-<body class="acordeones">
-    
+<body class="acordeones body-overflow-hidden">
     <!-- Preloader -->
 	<?php require_once("./Library/Layout/components/preloader.php");?>
     <!-- End Preloader -->

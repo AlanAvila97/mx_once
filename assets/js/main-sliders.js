@@ -145,4 +145,7 @@ $(document).ready(function() {
     if($('.infomedia').length){  
         sliderHorizontalPrograms('swiper-desmentidos-pgm', 'section-desmentidos-pgm');
     }
+    if($('.tv-en-vivo').length){  
+        sliderHorizontalPrograms('swiper-internacional-special-programs', 'section-internacional-pgm');
+    }
 });

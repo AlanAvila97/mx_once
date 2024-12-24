@@ -1,3 +1,6 @@
+body.bg-envivo-digital::after{
+
+}
 /*-------------------------------------------------------------
 # Seccion Banner Noticias
 --------------------------------------------------------------*/
@@ -25,6 +28,7 @@
     border-radius: 16px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
+    z-index: 3;
 }
 .section-radio .container-radio  .controls button {
     cursor: pointer;
@@ -65,9 +69,172 @@
 .section-radio .container-radio  path {
     stroke: rgba(255, 255, 255, 0.273);
 }
+/*-------------------------------------------------------------
+# Seccion Sliders Especiales
+--------------------------------------------------------------*/
+.section-special-programs{
+    /* background: url(https://canaloncetv.s3.us-east-1.amazonaws.com/REST/data/images/fondo_once_digital_2400x1400.jpg); */
+    background: url(../images/Fondo-TV-internacional-1920-1080.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.section-special-programs .container-special-programs{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 3rem;
+}
+.section-special-programs .container-special-programs .title-special-programs{
+    color: var(--color_white_50);
+    width: 90%;
+    align-self: center;
+}
+.section-special-programs .container-special-programs .title-special-programs h2{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+}
+.section-special-programs .container-special-programs .title-special-programs p{
+    font-size: 1.5rem;
+}
+.section-special-programs .container-special-programs .slider-special-programs{
+    padding-top: 1%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.section-special-programs .container-special-programs .slider-special-programs .swiper {
+    width: 100%;
+    height: 400px;
+    height: auto;
+}
+.section-special-programs .container-special-programs .slider-special-programs .swiper-slide {
+    height: 100%;
+}
+.section-special-programs .container-special-programs .slider-special-programs .swiper-slide a {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none;
+    color: var(--color_sazerac_50);
+}
+.section-special-programs .container-special-programs .slider-special-programs .swiper-slide  a:hover {
+    color: var(--color_sazerac_50);
+}
+.section-special-programs .container-special-programs .slider-special-programs .swiper-slide  a picture{
+    width: 100%;
+    height: auto;
+}
+.section-special-programs .container-special-programs .slider-special-programs .swiper-slide  a picture img{
+    width: auto;
+    height: auto;
+    max-height: 400px;
+    max-width: 100%;
+    object-fit: cover;
+}
+.section-special-programs .container-special-programs .slider-special-programs .content-navigation-prev img,
+.section-special-programs .container-special-programs .slider-special-programs .content-navigation-next img{
+    filter: invert(1);
+}
+.section-special-programs .container-special-programs .slider-special-programs .swiper-slide a h2{
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.section-special-programs .container-special-programs .slider-special-programs .swiper-slide a h3{
+    width: auto;
+    height: 80px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    font-family: "Trebuchet MS Bold";
+    font-size: 1rem;
+}
+.section-special-programs .container-special-programs .slider-special-programs .swiper-slide  a small{
+    color: #000000;
+    position: absolute;
+    bottom: 10%;
+    background: var(--color_sazerac_50);
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 1px var(--color_white_50);
+}
+.section-special-programs .container-special-programs .slider-special-programs .swiper-slide .redirect-special{
+    text-decoration: none;
+}
+.section-special-programs .container-special-programs .slider-special-programs .swiper-slide .redirect-special .content-redirect-special{
+    width: 100%;
+    height: 85%;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    background: var(--color_jazzberry_jam_900);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-special-programs .container-special-programs .slider-special-programs .swiper-slide .redirect-special .content-redirect-special h2{
+    color: var(--color_sazerac_50);
+}
+.section-special-programs .container-special-programs .slider-special-programs .container-button-premier-programs{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.section-special-programs .container-special-programs .slider-special-programs .container-button-premier-programs a{
+    padding-right: 2%;
+    position: absolute;
+    transform: translate(0%,-6em);
+    z-index: 99;
+    -webkit-transform: translate(0%,-6em);
+    -moz-transform: translate(0%,-6em);
+    -ms-transform: translate(0%,-6em);
+    -o-transform: translate(0%,-6em);
+}
+.section-special-programs .container-special-programs .slider-special-programs .container-button-premier-programs a button{
+    color: var(--color_sazerac_50);
+    cursor: pointer;
+    background: var(--color_jazzberry_jam_900);
+    border: none;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 4px 7px;
+}
 @media (max-width: 991px) {
     .section-radio .container-radio {
         grid-template-columns: 1fr;
         padding: 1rem;
+    }
+    /*-------------------------------------------------------------
+    # Seccion Sliders Especiales
+    --------------------------------------------------------------*/
+    .section-special-programs .container-special-programs{
+        padding: 1rem 1.2rem;
+    }
+    .section-special-programs .container-special-programs .slider-special-programs .swiper{
+        width: 85%;
+    }
+    .section-special-programs .container-special-programs .slider-special-programs .swiper-slide a h3{
+        height: 60px;
+    }
+    .section-special-programs .container-special-programs .title-special-programs{
+        width: 100%;
+    }
+}
+@media (max-width: 660px){    
+    /*-------------------------------------------------------------
+    # Seccion Sliders Especiales
+    --------------------------------------------------------------*/
+    .section-special-programs .container-special-programs .title-special-programs h2{
+        font-size: 1.5rem;
+    }
+    html .section-special-programs .container-special-programs .slider-special-programs .swiper-slide{
+        width: 80%;
     }
 }

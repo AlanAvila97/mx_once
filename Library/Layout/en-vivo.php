@@ -17,10 +17,13 @@
     <meta name="twitter:site" content="">
     <!-- Elements Header -->
 	<?php require_once("./Library/Layout/components/header_elements.php");?>
+    <!-- swiper  -->
+    <link rel="preload" href="./assets/css/swiper/swiper-bundle.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./assets/css/swiper/swiper-bundle.min.css"></noscript>
     <!--  -->
     <link rel="stylesheet" href="./assets/css/mapa.css" media="none" onload="if(media!='all')media='all'"/>
     <noscript><link rel="stylesheet" href="./assets/css/mapa.css"></noscript>
-<body class="en-vivo bg-envivo-digital body-overflow-hidden">
+<body class="tv-en-vivo body-overflow-hidden">
     <!-- Preloader -->
 	<?php require_once("./Library/Layout/components/preloader.php");?>
     <!-- End Preloader -->
@@ -38,7 +41,10 @@
     <!--  Footer Elements  -->
     <?php require_once("./Library/Layout/components/footer_elements.php");?>
     <!-- End Footer Elements-->
+    <!-- swiper  -->
+    <script defer src="./assets/js/swiper/swiper-bundle.min.js"></script>
     <!--  -->
     <script src='https://cdn.jsdelivr.net/npm/svg-pan-zoom@3.5.0/dist/svg-pan-zoom.min.js'></script>    
     <script defer src="./assets/js/mapa_tv.js"></script>
+    <script defer src="./assets/js/tv_en_vivo.js"></script>
 </body>

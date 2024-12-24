@@ -1,19 +1,34 @@
-// let canalonce = {
-//     events:function(name, category, label, value){
-//       gtag('event', name, {
-//         'event_category': category,
-//         'event_label': label,
-//         'value': value
-//       });
-//     }
-// }
+const setElementsVideo = (signal) => {
+  let { title, video_s, img_s, desc } =  getSignalInfo(signal);
+  let html = `<picture>
+                  <source class="lazy img-fluid" srcset="${img_s}" type="image/webp" alt="Logo Señal ${title}" loading="lazy">
+                  <source class="lazy img-fluid" srcset="${img_s}" type="image/png" alt="Logo Señal ${title}" loading="lazy">
+                  <img class="lazy img-fluid img-digital" src="${img_s}" alt="Logo Señal ${title}" loading="lazy" title="Logo Señal ${title}">
+              </picture>`;
+  $('.section-reproductor-live .title-reproductor-live').append(html);
+  reproductorLive(video_s);
+}
+const getSignalInfo = (signal) => {
+  let info = {}
+  switch (signal) {
+    case 1:      
+      break;
+    default:
+      info.title = 'Canal Once';
+      info.video_s = 'https://vivo.canaloncelive.tv/oncedos/ngrp:pruebachunks_all/playlist.m3u8';
+      // info.img_s = './assets/images/MX+Logotipo_curvas_color.svg';
+      info.img_s = 'https://canalonce.mx/REST/data/images/logoonce3-transparent.png';
+      info.desc = '';
+      break;
+  }
+  return info;
+}
 const comprobationURl = () => {
 	const valores = window.location.search;
 	const urlParams = new URLSearchParams(valores);
-    console.log(urlParams);
 	//Accedemos a los valores
-	// var type = urlParams.get('type');
-	// var q = urlParams.get('q');
+	let signal = urlParams.get('signal');
+  setElementsVideo(signal)
 }
 /**
   * @description Función que configura el reproductor de la señal en vivo
@@ -73,21 +88,6 @@ const reproductorLive = (video) => {
                                         return ((e.which === 70) || (e.ctrlKey && e.which === 13));
                                     },                                  
                                 });
-            // reproductor.httpSourceSelector();
-            // reproductor.landscapeFullscreen({
-            //                                 fullscreen: {
-            //                                     enterOnRotate: true,
-            //                                     exitOnRotate: true,
-            //                                     alwaysInLandscapeMode: true,
-            //                                     iOS: false
-            //                                 }  
-            //                                 });
-            // // reproductor.src({ type: 'application/x-mpegURL', src: 'https://vivo.canaloncelive.tv/alivepkgr3/ngrp:cepro_all/playlist.m3u8'});
-            // reproductor.src({ type: 'application/x-mpegURL', src: 'https://vivo.canaloncelive.tv/oncedos/ngrp:pruebachunks_all/playlist.m3u8'});
-            // reproductor.controls(true);
-            // reproductor.playsinline(true);
-            // reproductor.autoplay(true); 
-
             if (video.includes('m3u8')) {
                 reproductor.httpSourceSelector();
                 reproductor.landscapeFullscreen({
@@ -165,6 +165,6 @@ const reproductorLive = (video) => {
     // });
 }
 document.addEventListener("DOMContentLoaded", function(event) {    
-    reproductorLive('https://vivo.canaloncelive.tv/oncedos/ngrp:pruebachunks_all/playlist.m3u8');
+    // reproductorLive('https://vivo.canaloncelive.tv/oncedos/ngrp:pruebachunks_all/playlist.m3u8');
     comprobationURl();
 });

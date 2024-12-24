@@ -331,9 +331,6 @@ const playVideo = async (data) => {
 }
 // 
 document.addEventListener("DOMContentLoaded", function(event) {  
-    setTimeout(function(){
-        $("body").removeClass("body-overflow-hidden");    
-    }, 1700);  
     loadChannelUI();
     playVideo(jsonPgm);    
 });

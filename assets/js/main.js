@@ -100,4 +100,7 @@ $(document).ready(function() {
   setTimeout(function(){
     $('.preloader').fadeOut(1000);
   }, 1500);
+  setTimeout(function(){
+    $("body").removeClass("body-overflow-hidden");    
+  }, 1700); 
 });

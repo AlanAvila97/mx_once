@@ -314,6 +314,5 @@ $("body").on("click", ".btn-desc-episode", function(){
     } 
 });
 document.addEventListener("DOMContentLoaded", function(event) {    
-  $("body").removeClass("body-hidden");
   loadChannelUI();    
 });

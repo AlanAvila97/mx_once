@@ -1,11 +1,6 @@
 <section class="section-reproductor-live pt-md-70">
     <div class="container-reproductor-live">
         <div class="title-reproductor-live logo-once3">
-            <picture>
-                <source class="lazy img-fluid" srcset="./assets/images/MX+Logotipo_curvas_color.svg" type="image/webp" alt="Logo Señal Digital once.3" loading="lazy">
-                <source class="lazy img-fluid" srcset="./assets/images/MX+Logotipo_curvas_color.svg" type="image/png" alt="Logo Señal Digital once.3" loading="lazy">
-                <img class="lazy img-fluid img-digital" src="./assets/images/MX+Logotipo_curvas_color.svg" alt="Logo Señal Digital once.3" loading="lazy" title="Logo Señal Digital once.3">
-            </picture>
         </div>
         <div class="content-reproductor-live">
             <div class="reproductor-live center-items">                        
@@ -14,8 +9,6 @@
             </div>
         </div>                                   
         <div class="title-program-live">
-            <h2 class="current-program"></h2>
-            <h2 class="sinopsis-program"></h2>
             <p class="desc-program"></p>
         </div> 
     </div>

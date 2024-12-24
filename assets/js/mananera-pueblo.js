@@ -88,6 +88,9 @@ const searchEpisodes = (data) => {
                         </div>
                     </div>`;
     });
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $(".content-results-search").offset().top - 70
+    }, 1000);
     $('.results-search').append(html);
 }
 /**

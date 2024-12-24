@@ -89,6 +89,7 @@ body.bg-envivo-digital::after{
     color: var(--color_white_50);
     width: 90%;
     align-self: center;
+    padding: 3rem 0rem;
 }
 .section-special-programs .container-special-programs .title-special-programs h2{
     text-transform: uppercase;

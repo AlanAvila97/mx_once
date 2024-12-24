@@ -26,17 +26,17 @@
                     Buscar                    
                 </button>
             </div>
-            <div class="filters-search d-grid">
-                <button type="button" class="item-filter"> Seguridad </button>
-                <button type="button" class="item-filter"> Energía </button>
-                <button type="button" class="item-filter"> Educación </button>
-                <button type="button" class="item-filter"> Vida saludable </button>
-
-                <button type="button" class="item-filter"> Humanismo mexicano </button>
-                <button type="button" class="item-filter"> Mujeres haciendo historia </button>
-                <button type="button" class="item-filter"> Detector de mentiras </button>
-                <button type="button" class="item-filter"> Suave patria </button>
-            </div>
         </form>
+        <div class="input-search d-flex">
+            <div class="filters-search d-grid">
+            </div>
+        </div>
+        <div class="content-results-search d-none">
+            <div class="title-results-search">
+                <h2>Reultados</h2>
+            </div>
+            <div class="results-search d-flex">
+            </div>
+        </div>
     </article>
 </section>

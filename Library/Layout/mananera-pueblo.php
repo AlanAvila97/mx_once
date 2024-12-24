@@ -27,6 +27,9 @@
     <!-- Navbar -->
 	<?php require_once("./Library/Layout/components/nabvar.php");?>
     <!-- End Navbar -->
+    <!-- Preloader Search -->
+    <?php require_once("./Library/Layout/components/preloader_search.php");?>
+    <!-- End Preloader Search -->
     <main id="wrapper">     
         <!-- View -->
         <?php require_once("./Library/Layout/views/mananera_pueblo_view.php");?>
